@@ -23,6 +23,11 @@ These tools should be installed on your local system before you begin.
   export GITHUB_TOKEN=[REDACTED]
   export CIRCLE_TOKEN=[REDACTED]
   ```
+
+2. Authenticate Composer to Github.
+
+  `composer config --global github-oauth.github.com $GITHUB_TOKEN`
+
 2. Create a new site.
   ```
   terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"

@@ -1,5 +1,5 @@
 {
-  "name": "pantheon-systems/example-wordpress-composer",
+  "name": "davisshaver/railyard",
   "description": "",
   "type": "project",
   "keywords": [],
@@ -11,7 +11,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/pantheon-systems/wordpress-composer"
+      "url": "https://github.com/davisshaver/railyard"
     }
   ],
   "require": {
