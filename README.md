@@ -36,7 +36,12 @@ These tools should be installed on your local system before you begin.
 
 3. Make the Github repository private.
 
-4. Configure secrets in the CircleCI environment.
+4. Configure additional secrets in the CircleCI environment.
+
+- Packagist_.com_ Token
+- Slack URL
+
+  Warning: You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
 
 ### Merging upstream updates
 The git tree of this repository is based on the upstream Pantheon project, but child repositories begin with fresh histories. We recommend this strategy of merging upstream updates into the site repository:
