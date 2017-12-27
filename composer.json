@@ -10,8 +10,11 @@
       "url": "https://wpackagist.org"
     },
     {
-      "type": "vcs",
-      "url": "https://github.com/davisshaver/railyard"
+      "type": "composer",
+      "url": "https://repo.packagist.com/philly-publishing-co/"
+    },
+    {
+      "packagist.org": false
     }
   ],
   "require": {

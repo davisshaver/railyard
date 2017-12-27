@@ -1,4 +1,5 @@
 # Railyard
+This is the starter kit for new Philly Publishing Company sites. It lays out the tracks for local development and new site creation. Proprietary code and secrets can be included on a per site basis using Composer or direct commits.
 
 ## Local development
 
@@ -24,18 +25,22 @@ These tools should be installed on your local system before you begin.
   export CIRCLE_TOKEN=[REDACTED]
   ```
 
-2. Authenticate Composer to Github.
-
-  `composer config --global github-oauth.github.com $GITHUB_TOKEN`
-
 2. Create a new site.
   ```
   terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
   ```
 
-  Note: You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password.
+  Note: You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
 
   Warning: This step will create a new Pantheon sandbox site and public Github repository.
 
 3. Make the Github repository private.
 
+4. Configure secrets in the CircleCI environment.
+
+### Merging upstream updates
+The git tree of this repository is based on the upstream Pantheon project, but child repositories begin with fresh histories. We recommend this strategy of merging upstream updates into the site repository:
+
+```
+git pull railyard master --allow-unrelated-histories
+```
