@@ -1,0 +1,21 @@
+{
+  "scripts": {
+    "collect-logs": "(cd site-logs; bash ../private/tooling/logs/collect_logs.sh $SITE_GUID)" ,
+    "send-logs": "bash private/tooling/logs/send_logs.sh",
+    "goaccess:dev": "access_getlogs --site=$SITE_NAME --env=dev",
+    "goaccess:test": "access_getlogs --site=$SITE_NAME --env=test",
+    "goaccess:live": "access_getlogs --site=$SITE_NAME --env=live"
+  },
+  "name": "railyard",
+  "version": "1.01",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^8.0.2",
+    "eslint": "^4.11.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-config-airbnb-es5": "^1.2.0",
+    "eslint-plugin-googleappsscript": "^1.0.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.5.1"
+  }
+}

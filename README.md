@@ -3,6 +3,7 @@ This is the starter kit for new Philly Publishing Company sites. It lays out the
 
 ## Local development
 
+
 ### Prerequisites
 These tools should be installed on your local system before you begin.
 
@@ -15,6 +16,11 @@ These tools should be installed on your local system before you begin.
    - Composer plugin
 - Lando
 
+Recommended:
+
+- AWS CLI
+- GoAccess
+
 ### Lando workflow
 
 ### Launching a new site
@@ -25,6 +31,8 @@ These tools should be installed on your local system before you begin.
   export CIRCLE_TOKEN=[REDACTED]
   ```
 
+  Note: Later you may want to add the `SITE_GUID` to your environment. We'll use this to collect logs.
+
 2. Create a new site.
   ```
   terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
@@ -33,7 +41,7 @@ These tools should be installed on your local system before you begin.
   Note: You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
 
   Warning: This step will create a new Pantheon sandbox site and public Github repository.
-
+ 
 3. Make the Github repository private.
 
 4. Configure additional secrets in the CircleCI environment.
