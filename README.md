@@ -32,7 +32,8 @@ Recommended:
 
 ### Launching a new site
 
-1. Setup access tokens in your local environment.
+  1. Setup access tokens in your local environment.
+
   ```
   export GITHUB_TOKEN=[REDACTED]
   export CIRCLE_TOKEN=[REDACTED]
@@ -40,7 +41,8 @@ Recommended:
 
   Note: Later you may want to add the `SITE_GUID` to your environment. We'll use this to collect logs.
 
-2. Create a new site.
+  2. Create a new site.
+  
   ```
   terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
   ```
@@ -49,12 +51,12 @@ Recommended:
 
   Warning: This step will create a new Pantheon sandbox site and public Github repository.
  
-3. Make the Github repository private.
+  3. Make the Github repository private.
 
-4. Configure additional secrets in the CircleCI environment.
+  4. Configure additional secrets in the CircleCI environment.
 
-- Packagist._com_ Token
-- Slack URL
+  - Packagist._com_ Token
+  - Slack URL
 
   Warning: You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
 
