@@ -46,7 +46,7 @@ Recommended:
 
 4. Configure additional secrets in the CircleCI environment.
 
-- Packagist_.com_ Token
+- Packagist._com_ Token
 - Slack URL
 
   Warning: You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
