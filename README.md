@@ -3,7 +3,6 @@ This is the starter kit for new Philly Publishing Company sites. It lays out the
 
 ## Local development
 
-
 ### Prerequisites
 These tools should be installed on your local system before you begin.
 
@@ -20,6 +19,14 @@ Recommended:
 
 - AWS CLI
 - GoAccess
+  After you have installed GoAccess, add the following lines to your GoAccess configuration:
+
+  ```
+  # Log output for Railyard
+  time-format %H:%M:%S
+  date-format %d/%b/%Y
+  log-format %h - %^ [%d:%t %^]  "%r" %s %b "%R" "%u" %T "%^"%
+  ```
 
 ### Lando workflow
 
