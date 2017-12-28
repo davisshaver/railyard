@@ -1,6 +1,6 @@
 {
   "name": "davisshaver/railyard",
-  "description": "",
+  "description": "Starter kit for a Philly Publishing site, hosted on Pantheon.",
   "type": "project",
   "keywords": [
     "circleci",
