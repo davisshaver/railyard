@@ -2,6 +2,9 @@
 ### GitHub repository .gitignore section
 ###
 
+# Enviroment
+.env
+
 # VSCode settings
 .vscode/
 
