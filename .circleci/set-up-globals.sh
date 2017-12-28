@@ -78,6 +78,18 @@ if [ -n "$GITHUB_TOKEN" ] ; then
   composer config --global github-oauth.github.com $GITHUB_TOKEN
 fi
 
+# Hook up Packagist.com credentials if available.
+if [ -n "$PACKAGIST_TOKEN" ] && [ -n "$PACKAGIST_USER" ] ; then
+  composer config --global --auth http-basic.repo.packagist.com $PACKAGIST_USER $PACKAGIST_TOKEN
+fi
+
+# Drop Slack URL into secrets.json.
+if [ -n "$SLACK_URL" ]; then
+	echo "{
+		\"slack_url\": \"$SLACK_URL\"
+	}" > secrets.json
+fi
+
 # Bail on errors
 set +ex
 
