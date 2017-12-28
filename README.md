@@ -30,7 +30,7 @@ Recommended:
 
 ### Lando workflow
 
-New sites are ready to go with `lando start` from the project root.
+New sites are ready to go with `lando start` from the project root. See `.env.sample` for keys supported in `.env`.
 
 You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
 
