@@ -108,6 +108,9 @@ pantheon.upstream.yml
 *.log
 *.sql
 
+# Railyard has a special dev DB (contains no secrets).
+!private/local/railyard.sql.gz
+
 # OS generated files #
 ######################
 .DS_Store*

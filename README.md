@@ -32,9 +32,11 @@ Recommended:
 
 New sites are ready to go with `lando start` from the project root.
 
-You may want to run `lando composer bootstrap` next. This populates the database to simulate a typical Philly Publishing site.
+You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
 
 WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`.
+
+**Note:** Offline development with Lando requires configuration via [DNSMasq](https://docs.devwithlando.io/tutorials/offline-dev.html).
 
 ### Launching a new site
 
