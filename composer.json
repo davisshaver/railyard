@@ -24,19 +24,22 @@
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
     "vlucas/phpdotenv": "^2.4.0",
+    "wikimedia/composer-merge-plugin": "^1.4",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
     "wpackagist-theme/twentyseventeen": "^1.1"
   },
   "require-dev": {
-    "roave/security-advisories": "dev-master",
-    "paulgibbs/behat-wordpress-extension": "0.8.0",
     "behat/mink-goutte-driver": "^1.2",
     "behat/mink-selenium2-driver": "^1.3",
+    "brain/monkey": "^1.4",
+    "danielbachhuber/composer-lock-updater": "^0.2.1",
+    "paulgibbs/behat-wordpress-extension": "0.8.0",
+    "phpunit/phpunit": "^6.1",
+    "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^2.9.0",
     "wp-coding-standards/wpcs": "dev-master",
-    "phpunit/phpunit": "^6.1",
-    "brain/monkey": "^1.4"
+    "wpackagist-plugin/wp-sweep": "dev-master"
   },
   "config": {
     "vendor-dir": "vendor",
@@ -48,6 +51,18 @@
     }
   },
   "extra": {
+    "merge-plugin": {
+        "include": [
+            "composer-addons/*.json"
+        ],
+        "recurse": true,
+        "replace": false,
+        "ignore-duplicates": true,
+        "merge-dev": true,
+        "merge-extra": false,
+        "merge-extra-deep": false,
+        "merge-scripts": true
+    },
     "wordpress-install-dir": "web/wp",
     "build-env": {
       "install-cms": [
@@ -67,6 +82,9 @@
     ]
   },
   "scripts": {
+    "convert-to-innodb": [
+      "php ./scripts/composer/convert-to-innodb.php"
+    ],
     "build-assets": [
       "@prepare-for-pantheon",
       "composer install --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
@@ -96,6 +114,11 @@
     ],
     "unit-test": [
       "./vendor/bin/phpunit tests/unit/*"
+    ],
+    "scrub-db": [
+      "lando wp package install trepmal/wp-revisions-cli",
+      "lando wp revisions clean --hard",
+      "lando wp db optimize"
     ]
   }
 }

@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ec4dc899b835bbc79a0a83823a52eb3d",
+    "content-hash": "de32aec4cbf4580a3ecea8ac809dbdf5",
     "packages": [
         {
             "name": "composer/installers",
@@ -371,6 +371,55 @@
                 "environment"
             ],
             "time": "2016-09-01T10:05:43+00:00"
+        },
+        {
+            "name": "wikimedia/composer-merge-plugin",
+            "version": "v1.4.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/wikimedia/composer-merge-plugin.git",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/wikimedia/composer-merge-plugin/zipball/81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "reference": "81c6ac72a24a67383419c7eb9aa2b3437f2ab100",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "composer/composer": "~1.0.0",
+                "jakub-onderka/php-parallel-lint": "~0.8",
+                "phpunit/phpunit": "~4.8|~5.0",
+                "squizlabs/php_codesniffer": "~2.1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.3.x-dev"
+                },
+                "class": "Wikimedia\\Composer\\MergePlugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "Wikimedia\\Composer\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Bryan Davis",
+                    "email": "bd808@wikimedia.org"
+                }
+            ],
+            "description": "Composer plugin to merge multiple composer.json files",
+            "time": "2017-04-25T02:31:25+00:00"
         },
         {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
@@ -1041,6 +1090,47 @@
             "description": "Promoting the interoperability of container objects (DIC, SL, etc.)",
             "homepage": "https://github.com/container-interop/container-interop",
             "time": "2017-02-14T19:40:03+00:00"
+        },
+        {
+            "name": "danielbachhuber/composer-lock-updater",
+            "version": "v0.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/danielbachhuber/composer-lock-updater.git",
+                "reference": "01771bb56f5312ea6294e07c6312f197061e5598"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/danielbachhuber/composer-lock-updater/zipball/01771bb56f5312ea6294e07c6312f197061e5598",
+                "reference": "01771bb56f5312ea6294e07c6312f197061e5598",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/php-code-coverage": "~2|~4",
+                "satooshi/php-coveralls": "~1",
+                "squizlabs/php_codesniffer": "^2.7"
+            },
+            "bin": [
+                "bin/clu"
+            ],
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "CLU\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniel Bachhuber",
+                    "email": "daniel@handbuilt.co"
+                }
+            ],
+            "description": "Run composer-lock-updater in your CI system for bot-powered composer.lock pull requests.",
+            "time": "2017-09-21T23:26:50+00:00"
         },
         {
             "name": "doctrine/instantiator",

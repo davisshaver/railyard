@@ -76,3 +76,40 @@ git pull railyard master --allow-unrelated-histories
 ```
 
 ## Logs
+
+## Existing site import
+
+Here are some tips for cleaning up existing sites.
+
+1. Install the Revisions command for WP CLI and then delete. [See docs for more options.](https://github.com/trepmal/wp-revisions-cli).
+
+```
+  lando wp package install trepmal/wp-revisions-cli
+  lando wp revisions clean --hard
+  lando wp db optimize
+```
+
+2. Delete transients.
+
+```
+wp transient delete --all
+```
+
+3. Delete pending comments and pingbacks.
+
+```
+
+```
+
+4. Profile largest tables.
+
+```
+wp db size --tables
+```
+
+For your prefix (usually `wp_`), we need to keep the following tables:
+
+![wp4 4 2-erd](https://user-images.githubusercontent.com/1636964/34419958-c0170cb8-ebd4-11e7-950b-b4721798229c.png)
+
+Keep an eye out for extra tables and/or columns.
+
