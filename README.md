@@ -39,7 +39,7 @@ Recommended:
   export CIRCLE_TOKEN=[REDACTED]
   ```
 
-  **Note:** Later you may want to add the `SITE_GUID` to your environment. We'll use this to collect logs.
+  **Note:** Later you may want to add the `SITE_GUID` and `PACKAGISTCOM_KEY` to your environment. We'll use these to collect logs and download private repos, respectively.
 
   2. Create a new site.
   
@@ -53,7 +53,7 @@ Recommended:
  
   3. Make the Github repository private.
 
-  4. Configure additional secrets in the CircleCI environment.
+  4. Configure optional secrets in the CircleCI environment.
 
   - Packagist._com_ Token
   - Slack URL
