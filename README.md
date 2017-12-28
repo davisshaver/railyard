@@ -64,7 +64,7 @@ WordPress will accept requests at any hostname. If you would like to change the 
   4. Configure optional secrets in the CircleCI environment.
 
   - Packagist._com_ Token
-  - Slack URL
+  - Slack Webhook URL
 
   **Warning:** You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
 
