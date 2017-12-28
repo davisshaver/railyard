@@ -30,6 +30,12 @@ Recommended:
 
 ### Lando workflow
 
+New sites are ready to go with `lando start` from the project root.
+
+You may want to run `lando composer bootstrap` next. This populates the database to simulate a typical Philly Publishing site.
+
+WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`.
+
 ### Launching a new site
 
   1. Setup access tokens in your local environment.
@@ -39,7 +45,7 @@ Recommended:
   export CIRCLE_TOKEN=[REDACTED]
   ```
 
-  **Note:** Later you may want to add the `SITE_GUID` and `PACKAGISTCOM_KEY` to your environment. We'll use these to collect logs and download private repos, respectively.
+  **Note:** Later you may want to add the `SITE_GUID` and `PACKAGIST_TOKEN`/`PACKAGIST_USER` to your environment. We'll use these to collect logs and download private repos, respectively.
 
   2. Create a new site.
   
