@@ -2,7 +2,14 @@
   "name": "davisshaver/railyard",
   "description": "",
   "type": "project",
-  "keywords": [],
+  "keywords": [
+    "circleci",
+    "github-api",
+    "lando",
+    "pantheon",
+    "wordpress",
+    "wordpress-development"
+  ],
   "minimum-stability": "alpha",
   "repositories": [
     {
