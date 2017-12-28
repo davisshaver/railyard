@@ -74,3 +74,5 @@ The git tree of this repository is based on the upstream Pantheon project, but c
 ```
 git pull railyard master --allow-unrelated-histories
 ```
+
+## Logs
