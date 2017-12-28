@@ -39,7 +39,7 @@ Recommended:
   export CIRCLE_TOKEN=[REDACTED]
   ```
 
-  Note: Later you may want to add the `SITE_GUID` to your environment. We'll use this to collect logs.
+  **Note:** Later you may want to add the `SITE_GUID` to your environment. We'll use this to collect logs.
 
   2. Create a new site.
   
@@ -47,9 +47,9 @@ Recommended:
   terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
   ```
 
-  Note: You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
+  **Note:** You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
 
-  Warning: This step will create a new Pantheon sandbox site and public Github repository.
+  **Warning:** This step will create a new Pantheon sandbox site and public Github repository.
  
   3. Make the Github repository private.
 
@@ -58,7 +58,7 @@ Recommended:
   - Packagist._com_ Token
   - Slack URL
 
-  Warning: You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
+  **Warning:** You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
 
 ### Merging upstream updates
 The git tree of this repository is based on the upstream Pantheon project, but child repositories begin with fresh histories. We recommend this strategy of merging upstream updates into the site repository:
