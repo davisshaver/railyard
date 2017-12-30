@@ -179,10 +179,18 @@ define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 /*
  Optionally use S3 Uploads.
 */
-// define( 'S3_UPLOADS_BUCKET', 'my-bucket' );
-// define( 'S3_UPLOADS_KEY', '' );
-// define( 'S3_UPLOADS_SECRET', '' );
-// define( 'S3_UPLOADS_REGION', '' );
+if ( getenv( 'AWS_S3_BUCKET' ) !== false ) {
+	define( 'S3_UPLOADS_BUCKET', getenv( 'AWS_S3_BUCKET' ) );
+}
+if ( getenv( 'AWS_KEY_ID' ) !== false ) {
+	define( 'S3_UPLOADS_KEY', getenv( 'AWS_KEY_ID' ) );
+}
+if ( getenv( 'AWS_KEY_SECRET' ) !== false ) {
+	define( 'S3_UPLOADS_SECRET', getenv( 'AWS_KEY_SECRET' ) );
+}
+if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
+	define( 'S3_UPLOADS_REGION', getenv( 'S3_UPLOADS_REGION' ) );
+}
 
 /**
  * WordPress Database Table prefix.
