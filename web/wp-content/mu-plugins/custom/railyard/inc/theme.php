@@ -5,7 +5,7 @@ namespace Railyard;
 class Theme {
 	use Singleton;
 
-	public function init() {
+	public function setup() {
 		add_action( 'admin_bar_menu', [ $this, 'remove_wp_logo' ], 999 );
 		add_action( 'admin_head', [ $this, 'railyard_favicon' ] );
 		add_action( 'admin_init', [ $this, 'remove_wp_news_widget' ] );
@@ -23,7 +23,7 @@ class Theme {
 		});
 	}
 
-	function railyard_login_logo() {
+	public function railyard_login_logo() {
 		?>
 		<style type="text/css">
 			body.login div#login h1 a {
@@ -33,27 +33,27 @@ class Theme {
 	<?php
 	}
 
-	function railyard_logo_url() {
+	public function railyard_logo_url() {
 		return home_url();
 	}
 
-	function railyard_logo_url_title() {
+	public function railyard_logo_url_title() {
 		return 'Another Philly Publishing Site';
 	}
 
-	function railyard_favicon() {
+	public function railyard_favicon() {
 		echo '<link rel="shortcut icon" href="/wp-content/mu-plugins/custom/railyard/static/favicon.ico" />';
 	}
 
-	function remove_wp_news_widget() {
+	public function remove_wp_news_widget() {
 		remove_meta_box( 'dashboard_primary', 'dashboard', 'normal' );
 	}
 
-	function remove_wp_logo( $wp_admin_bar ) {
+	public function remove_wp_logo( $wp_admin_bar ) {
 		$wp_admin_bar->remove_node( 'wp-logo' );
 	}
 
-	function replace_howdy( $wp_admin_bar ) {
+	public function replace_howdy( $wp_admin_bar ) {
 			$my_account = $wp_admin_bar->get_node( 'my-account' );
 			$yo         = str_replace( 'Howdy,', 'Yo,', $my_account->title );
 			$wp_admin_bar->add_node( array(
@@ -62,7 +62,7 @@ class Theme {
 			) );
 	}
 
-	function railyard_footer_text() {
+	public function railyard_footer_text() {
 		return '<em>Thanks for using this jawn.</em>';
 	}
 }

@@ -3,17 +3,17 @@ namespace Railyard;
 
 trait Singleton {
 
-	protected static $item;
+	protected static $instance;
 	
-	public static function item() {
-		if ( ! isset( static::$item ) ) {
-			static::$item = new static();
-			static::$item->init();
+	public static function instance() {
+		if ( ! isset( static::$instance ) ) {
+			static::$instance = new static();
+			static::$instance->setup();
 		}
-		return static::$item;
+		return static::$instance;
 	}
 
-	public function init() {
+	public function setup() {
 		// Put custom init here.
 	}
 }
