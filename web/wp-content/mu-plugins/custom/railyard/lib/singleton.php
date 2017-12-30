@@ -1,5 +1,5 @@
 <?php
-namespace Switchboard;
+namespace Railyard;
 
 trait Singleton {
 

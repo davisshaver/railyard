@@ -17,5 +17,3 @@ foreach ( $railyard_mu_plugins as $railyard_mu_plugin ) {
 		require_once dirname( __FILE__ ) . '/' . $railyard_mu_plugin;
 	}
 }
-
-\
