@@ -15,10 +15,13 @@ $rootPath = realpath( __DIR__ . '/..' );
 require_once( $rootPath . '/vendor/autoload.php' );
 
 /*
- * Fetch .env
+ * Fetch .env on Lando or other local setups.
  */
-if ( ! isset( $_ENV['PANTHEON_ENVIRONMENT'] ) && file_exists( $rootPath . '/.env' ) ) {
-	$dotenv = new Dotenv\Dotenv( $rootPath );
+if ( (
+	'lando' === $_ENV['PANTHEON_ENVIRONMENT'] ||
+	! isset( $_ENV['PANTHEON_ENVIRONMENT'] )
+) && file_exists( __DIR__ . '/.env' ) ) {
+	$dotenv = new Dotenv\Dotenv( __DIR__ );
 	$dotenv->load();
 	$dotenv->required( array(
 		'DB_NAME',
