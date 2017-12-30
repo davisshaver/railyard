@@ -176,6 +176,14 @@ endif;
 define( 'WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content' );
 define( 'WP_CONTENT_URL', WP_HOME . '/wp-content' );
 
+/*
+ Optionally use S3 Uploads.
+*/
+// define( 'S3_UPLOADS_BUCKET', 'my-bucket' );
+// define( 'S3_UPLOADS_KEY', '' );
+// define( 'S3_UPLOADS_SECRET', '' );
+// define( 'S3_UPLOADS_REGION', '' );
+
 /**
  * WordPress Database Table prefix.
  *
