@@ -30,6 +30,7 @@ web/*
 web/wp-content/*
 !web/wp-content/mu-plugins/
 web/wp-content/mu-plugins/*
+!web/wp-content/mu-plugins/0-loader.php
 !web/wp-content/mu-plugins/custom
 !web/wp-content/mu-plugins/.gitkeep
 !web/wp-content/plugins/
