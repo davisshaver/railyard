@@ -19,6 +19,7 @@
   ],
   "require": {
     "composer/installers": "^1.3.0",
+    "humanmade/s3-uploads": "^2.0@beta",
     "pantheon-systems/quicksilver-pushback": "^1.0",
     "pantheon-systems/wordpress-composer": "^4.8.2",
     "roots/wp-password-bcrypt": "^1.0.0",

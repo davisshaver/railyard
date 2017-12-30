@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "de32aec4cbf4580a3ecea8ac809dbdf5",
+    "content-hash": "764e39189a289ed78b086b5055af6065",
     "packages": [
         {
             "name": "composer/installers",
-            "version": "v1.4.0",
+            "version": "v1.5.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b"
+                "reference": "049797d727261bf27f2690430d935067710049c2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
-                "reference": "9ce17fb70e9a38dd8acff0636a29f5cf4d575c1b",
+                "url": "https://api.github.com/repos/composer/installers/zipball/049797d727261bf27f2690430d935067710049c2",
+                "reference": "049797d727261bf27f2690430d935067710049c2",
                 "shasum": ""
             },
             "require": {
@@ -29,7 +29,7 @@
             },
             "require-dev": {
                 "composer/composer": "1.0.*@dev",
-                "phpunit/phpunit": "4.1.*"
+                "phpunit/phpunit": "^4.8.36"
             },
             "type": "composer-plugin",
             "extra": {
@@ -100,15 +100,18 @@
                 "lavalite",
                 "lithium",
                 "magento",
+                "majima",
                 "mako",
                 "mediawiki",
                 "modulework",
+                "modx",
                 "moodle",
                 "osclass",
                 "phpbb",
                 "piwik",
                 "ppi",
                 "puppet",
+                "pxcms",
                 "reindex",
                 "roundcube",
                 "shopware",
@@ -121,7 +124,43 @@
                 "zend",
                 "zikula"
             ],
-            "time": "2017-08-09T07:53:48+00:00"
+            "time": "2017-12-29T09:13:20+00:00"
+        },
+        {
+            "name": "humanmade/s3-uploads",
+            "version": "v2.0.0-beta3",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/humanmade/S3-Uploads.git",
+                "reference": "d3c8d81fa57e4535271fbe47c9cef2e54b54da3c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/humanmade/S3-Uploads/zipball/d3c8d81fa57e4535271fbe47c9cef2e54b54da3c",
+                "reference": "d3c8d81fa57e4535271fbe47c9cef2e54b54da3c",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "Human Made Limited",
+                    "email": "support@humanmade.co.uk",
+                    "homepage": "http://hmn.md/"
+                }
+            ],
+            "description": "WordPress plugin to store uploads on S3",
+            "homepage": "https://github.com/humanmade/S3-Uploads",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2017-03-15T04:01:31+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -4418,6 +4457,27 @@
             "time": "2017-11-01T15:10:46+00:00"
         },
         {
+            "name": "wpackagist-plugin/wp-sweep",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-sweep/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-sweep.zip?timestamp=1511408408",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-sweep/",
+            "time": "2017-11-23T03:40:08+00:00"
+        },
+        {
             "name": "zendframework/zend-code",
             "version": "3.1.0",
             "source": {
@@ -4528,8 +4588,10 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "humanmade/s3-uploads": 10,
         "roave/security-advisories": 20,
-        "wp-coding-standards/wpcs": 20
+        "wp-coding-standards/wpcs": 20,
+        "wpackagist-plugin/wp-sweep": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
