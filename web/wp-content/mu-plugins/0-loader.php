@@ -9,7 +9,7 @@
  */
 
 $railyard_mu_plugins = array(
-	'railyard/railyard',
+	'custom/railyard/railyard.php',
 );
 
 foreach ( $railyard_mu_plugins as $railyard_mu_plugin ) {
