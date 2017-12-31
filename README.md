@@ -193,3 +193,7 @@ wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT
 ```
 
 The `4` here is the admin ID, which can be obtained with somthing like `wp user list --role=administrator --field=ID`. Comma separate multiple administrator ID's to ignore.
+
+### Theme
+
+Terminal is the required theme for Philly Publishing publishers.

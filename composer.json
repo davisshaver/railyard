@@ -23,6 +23,10 @@
     {
       "type": "vcs",
       "url": "https://github.com/Automattic/syndication"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/davisshaver/_s/"
     }
   ],
   "require": {
@@ -41,8 +45,7 @@
     "wpackagist-plugin/wp-api-menus": "dev-master",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
     "wpackagist-plugin/wp-rest-api-log": "dev-master",
-    "wpackagist-plugin/wp-rest-api-sidebars": "dev-master",
-    "wpackagist-theme/twentyseventeen": "^1.1"
+    "wpackagist-plugin/wp-rest-api-sidebars": "dev-master"
   },
   "require-dev": {
     "behat/mink-goutte-driver": "^1.2",
@@ -102,7 +105,7 @@
     "installer-paths": {
       "web/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+      "web/wp-content/themes/custom/{$name}/": ["type:wordpress-theme"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
     }
   },
