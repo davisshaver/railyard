@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce6d788e83799c9c68202c0fd62a37e5",
+    "content-hash": "1658745773bac9f993551dbb469453ae",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -163,6 +163,32 @@
                 "zikula"
             ],
             "time": "2017-12-29T09:13:20+00:00"
+        },
+        {
+            "name": "davisshaver/_s",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davisshaver/_s.git",
+                "reference": "3b7316f8035448b2c5a363d4ef7f40dce9978ae0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davisshaver/_s/zipball/3b7316f8035448b2c5a363d4ef7f40dce9978ae0",
+                "reference": "3b7316f8035448b2c5a363d4ef7f40dce9978ae0",
+                "shasum": ""
+            },
+            "type": "project",
+            "description": "Starter theme for a Philly Publishing site, hosted on Pantheon & based on Automattic's undercores theme.",
+            "keywords": [
+                "wordpress",
+                "wordpress-api",
+                "wordpress-development"
+            ],
+            "support": {
+                "source": "https://github.com/davisshaver/_s/tree/1.0.1"
+            },
+            "time": "2017-12-31T18:26:14+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -656,26 +682,6 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-rest-api-sidebars/",
             "time": "2016-01-14T15:37:54+00:00"
-        },
-        {
-            "name": "wpackagist-theme/twentyseventeen",
-            "version": "1.4",
-            "source": {
-                "type": "svn",
-                "url": "https://themes.svn.wordpress.org/twentyseventeen/",
-                "reference": "1.4"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/twentyseventeen.1.4.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/twentyseventeen/"
         }
     ],
     "packages-dev": [
@@ -5039,6 +5045,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
+        "davisshaver/_s": 20,
         "humanmade/s3-uploads": 10,
         "wpackagist-plugin/rest-api-console": 20,
         "wpackagist-plugin/wp-api-menus": 20,
