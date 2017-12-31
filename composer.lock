@@ -4,8 +4,46 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c02a76f6980a9429548a94954482202d",
+    "content-hash": "869adb82f73768cfe948c84f7c241f03",
     "packages": [
+        {
+            "name": "automattic/syndication",
+            "version": "2.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/syndication.git",
+                "reference": "374adf60d73afc739dd6fb406243a80ebf54a8db"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/syndication/zipball/374adf60d73afc739dd6fb406243a80ebf54a8db",
+                "reference": "374adf60d73afc739dd6fb406243a80ebf54a8db",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.2.4"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Automattic Inc",
+                    "homepage": "http://automattic.com"
+                }
+            ],
+            "description": "Syndication helps users manage posts across multiple sites. It's useful when managing posts on different platforms. With a single click you can push or pull a post to or from more than 100 sites.",
+            "keywords": [
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/Automattic/syndication/tree/2.0.1",
+                "issues": "https://github.com/Automattic/syndication/issues"
+            },
+            "time": "2017-12-18T15:59:47+00:00"
+        },
         {
             "name": "composer/installers",
             "version": "v1.5.0",
@@ -211,6 +249,48 @@
             "time": "2015-06-11T15:15:30+00:00"
         },
         {
+            "name": "oomphinc/composer-installers-extender",
+            "version": "v1.1.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/oomphinc/composer-installers-extender.git",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/oomphinc/composer-installers-extender/zipball/ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "reference": "ca1c4b16b0905c81d1e77e608f36a2eff1a56f56",
+                "shasum": ""
+            },
+            "require": {
+                "composer-plugin-api": "^1.0",
+                "composer/installers": "^1.0"
+            },
+            "type": "composer-plugin",
+            "extra": {
+                "class": "OomphInc\\ComposerInstallersExtender\\Plugin"
+            },
+            "autoload": {
+                "psr-4": {
+                    "OomphInc\\ComposerInstallersExtender\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Stephen Beemsterboer",
+                    "email": "stephen@oomphinc.com",
+                    "homepage": "https://github.com/balbuf"
+                }
+            ],
+            "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
+            "homepage": "http://www.oomphinc.com/",
+            "time": "2017-03-31T16:57:39+00:00"
+        },
+        {
             "name": "pantheon-systems/quicksilver-pushback",
             "version": "1.0.1",
             "source": {
@@ -411,6 +491,49 @@
             "time": "2017-04-25T02:31:25+00:00"
         },
         {
+            "name": "wordpress/gutenberg",
+            "version": "v1.9.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/WordPress/gutenberg.git",
+                "reference": "369e94834769ec5ccf2ab7d5548c753fda1c2caf"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/WordPress/gutenberg/zipball/369e94834769ec5ccf2ab7d5548c753fda1c2caf",
+                "reference": "369e94834769ec5ccf2ab7d5548c753fda1c2caf",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
+                "squizlabs/php_codesniffer": "^3.1",
+                "wimg/php-compatibility": "^8",
+                "wp-coding-standards/wpcs": "^0.14.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Prototyping since 1440. Development hub for the editor focus in core.",
+            "homepage": "https://wordpress.github.io/gutenberg/",
+            "keywords": [
+                "editor",
+                "gutenberg",
+                "javascript",
+                "react",
+                "wordpress",
+                "wp"
+            ],
+            "support": {
+                "issues": "https://github.com/WordPress/gutenberg/issues",
+                "source": "https://github.com/WordPress/gutenberg/tree/v1.9.1"
+            },
+            "time": "2017-12-13T14:31:24+00:00"
+        },
+        {
             "name": "wpackagist-plugin/pantheon-advanced-page-cache",
             "version": "0.1.5",
             "source": {
@@ -431,6 +554,48 @@
             "homepage": "https://wordpress.org/plugins/pantheon-advanced-page-cache/"
         },
         {
+            "name": "wpackagist-plugin/rest-api-console",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rest-api-console/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rest-api-console.zip?timestamp=1480479823",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rest-api-console/",
+            "time": "2016-11-30T04:23:43+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-api-menus",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-api-menus/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-api-menus.zip?timestamp=1475510483",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-api-menus/",
+            "time": "2016-10-03T17:01:23+00:00"
+        },
+        {
             "name": "wpackagist-plugin/wp-native-php-sessions",
             "version": "0.6.4",
             "source": {
@@ -449,6 +614,48 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wp-native-php-sessions/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-rest-api-log",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-rest-api-log/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-rest-api-log.zip?timestamp=1508806287",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-rest-api-log/",
+            "time": "2017-10-24T01:51:27+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-rest-api-sidebars",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-rest-api-sidebars/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-rest-api-sidebars.zip?timestamp=1452785874",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-rest-api-sidebars/",
+            "time": "2016-01-14T15:37:54+00:00"
         },
         {
             "name": "wpackagist-theme/twentyseventeen",
@@ -4407,6 +4614,237 @@
             "time": "2017-11-01T15:10:46+00:00"
         },
         {
+            "name": "wpackagist-plugin/developer-loggers-for-simple-history",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/developer-loggers-for-simple-history/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/developer-loggers-for-simple-history.zip?timestamp=1480089148",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/developer-loggers-for-simple-history/",
+            "time": "2016-11-25T15:52:28+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/email-log",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/email-log/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/email-log.zip?timestamp=1511518881",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/email-log/",
+            "time": "2017-11-24T10:21:21+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/https-mixed-content-detector",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/https-mixed-content-detector/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/https-mixed-content-detector.zip?timestamp=1421647354",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/https-mixed-content-detector/",
+            "time": "2015-01-19T06:02:34+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/log-deprecated-notices",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/log-deprecated-notices/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/log-deprecated-notices.zip?timestamp=1513617496",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/log-deprecated-notices/",
+            "time": "2017-12-18T17:18:16+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/query-monitor",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/query-monitor/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/query-monitor.zip?timestamp=1510265857",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/query-monitor/",
+            "time": "2017-11-09T22:17:37+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/rewrite-rules-inspector",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rewrite-rules-inspector/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rewrite-rules-inspector.zip?timestamp=1496932526",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rewrite-rules-inspector/",
+            "time": "2017-06-08T15:35:26+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/rewrite-testing",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/rewrite-testing/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/rewrite-testing.zip?timestamp=1400604786",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/rewrite-testing/",
+            "time": "2014-05-20T17:53:06+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/simple-history",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/simple-history/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/simple-history.zip?timestamp=1511547680",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/simple-history/",
+            "time": "2017-11-24T18:21:20+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/transients-manager",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/transients-manager/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/transients-manager.zip?timestamp=1496672955",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/transients-manager/",
+            "time": "2017-06-05T15:29:15+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/user-switching",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/user-switching/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/user-switching.zip?timestamp=1510264615",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/user-switching/",
+            "time": "2017-11-09T21:56:55+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-crontrol",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-crontrol/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-crontrol.zip?timestamp=1511358469",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-crontrol/",
+            "time": "2017-11-22T13:47:49+00:00"
+        },
+        {
             "name": "wpackagist-plugin/wp-sweep",
             "version": "dev-trunk",
             "source": {
@@ -4539,9 +4977,24 @@
     "minimum-stability": "alpha",
     "stability-flags": {
         "humanmade/s3-uploads": 10,
+        "wpackagist-plugin/rest-api-console": 20,
+        "wpackagist-plugin/wp-api-menus": 20,
+        "wpackagist-plugin/wp-rest-api-log": 20,
+        "wpackagist-plugin/wp-rest-api-sidebars": 20,
         "roave/security-advisories": 20,
         "wp-coding-standards/wpcs": 20,
-        "wpackagist-plugin/wp-sweep": 20
+        "wpackagist-plugin/wp-sweep": 20,
+        "wpackagist-plugin/email-log": 20,
+        "wpackagist-plugin/developer-loggers-for-simple-history": 20,
+        "wpackagist-plugin/simple-history": 20,
+        "wpackagist-plugin/transients-manager": 20,
+        "wpackagist-plugin/https-mixed-content-detector": 20,
+        "wpackagist-plugin/wp-crontrol": 20,
+        "wpackagist-plugin/user-switching": 20,
+        "wpackagist-plugin/log-deprecated-notices": 20,
+        "wpackagist-plugin/rewrite-testing": 20,
+        "wpackagist-plugin/query-monitor": 20,
+        "wpackagist-plugin/rewrite-rules-inspector": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,

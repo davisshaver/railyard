@@ -15,6 +15,14 @@
     {
       "type": "composer",
       "url": "https://wpackagist.org"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/wordpress/gutenberg"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/Automattic/syndication"
     }
   ],
   "require": {
@@ -104,12 +112,15 @@
     "convert-to-innodb": [
       "php ./scripts/composer/convert-to-innodb.php"
     ],
+    "build-gutenberg": "cd web/wp-content/mu-plugins/gutenberg && npm install && npm run build",
     "build-assets": [
       "@prepare-for-pantheon",
-      "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
+      "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress",
+      "@build-gutenberg"
     ],
     "build-assets-dev": [
-      "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress"
+      "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress",
+      "@build-gutenberg"
     ],
     "prepare-for-pantheon": "WordPressProject\\composer\\ScriptHandler::prepareForPantheon",
     "cleanup": [
