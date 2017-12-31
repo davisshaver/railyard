@@ -9,6 +9,7 @@
  */
 
 $railyard_mu_plugins = array(
+	'gutenberg/gutenberg.php',
 	'custom/railyard/railyard.php',
 );
 

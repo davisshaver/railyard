@@ -18,15 +18,16 @@
     }
   ],
   "require": {
-    "automattic/syndication": "dev-master",
+    "automattic/syndication": "^2.0.1",
     "composer/installers": "^1.3.0",
     "humanmade/s3-uploads": "^2.0@beta",
+    "oomphinc/composer-installers-extender": "^1.1",
     "pantheon-systems/quicksilver-pushback": "^1.0",
     "pantheon-systems/wordpress-composer": "^4.8.2",
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
     "wikimedia/composer-merge-plugin": "^1.4",
-    "wordpress/gutenberg": "dev-master",
+    "wordpress/gutenberg": "^1.9.1",
     "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
     "wpackagist-plugin/rest-api-console": "dev-master",
     "wpackagist-plugin/wp-api-menus": "dev-master",
@@ -88,6 +89,7 @@
       ]
     },
     "installer-paths": {
+      "web/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
       "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
