@@ -39,7 +39,18 @@
     "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^2.9.0",
     "wp-coding-standards/wpcs": "dev-master",
-    "wpackagist-plugin/wp-sweep": "dev-master"
+    "wpackagist-plugin/wp-sweep": "dev-master",
+    "wpackagist-plugin/email-log": "dev-master",
+    "wpackagist-plugin/developer-loggers-for-simple-history": "dev-master",
+    "wpackagist-plugin/simple-history": "dev-master",
+    "wpackagist-plugin/transients-manager": "dev-master",
+    "wpackagist-plugin/https-mixed-content-detector": "dev-master",
+    "wpackagist-plugin/wp-crontrol": "dev-master",
+    "wpackagist-plugin/user-switching": "dev-master",
+    "wpackagist-plugin/log-deprecated-notices": "dev-master",
+    "wpackagist-plugin/rewrite-testing": "dev-master",
+    "wpackagist-plugin/query-monitor": "dev-master",
+    "wpackagist-plugin/rewrite-rules-inspector": "dev-master"
   },
   "config": {
     "vendor-dir": "vendor",
@@ -109,8 +120,7 @@
       "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
     ],
     "code-sniff": [
-      "./vendor/bin/phpcs --config-set installed_paths ./vendor/wp-coding-standards/wpcs",
-      "./vendor/bin/phpcs ./web/wp-content"
+      "./vendor/bin/phpcs ./web/wp-content/plugins/custom/"
     ],
     "unit-test": [
       "./vendor/bin/phpunit tests/unit/*"

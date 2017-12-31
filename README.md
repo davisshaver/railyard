@@ -182,7 +182,6 @@ You may also want to double check that all posts have a featured image. The feat
 ```
 lando wp --url=onwardstate.lndo.site assign-featured-images --dry-run --only-missing
 lando wp --url=onwardstate.lndo.site assign-featured-images --only-missing
-
 ```
 
 6. Removing subscribers.
@@ -194,4 +193,3 @@ wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT
 ```
 
 The `4` here is the admin ID, which can be obtained with somthing like `wp user list --role=administrator --field=ID`. Comma separate multiple administrator ID's to ignore.
-
