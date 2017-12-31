@@ -26,7 +26,7 @@
     },
     {
       "type": "vcs",
-      "url": "https://github.com/davisshaver/_s/"
+      "url": "https://github.com/davisshaver/terminal/"
     }
   ],
   "require": {
@@ -106,7 +106,7 @@
     "installer-paths": {
       "web/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/custom/{$name}/": ["type:wordpress-theme"],
+      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
       "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
     }
   },

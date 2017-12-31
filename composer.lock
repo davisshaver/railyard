@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "1658745773bac9f993551dbb469453ae",
+    "content-hash": "f3bd6c38f6af106c0e73ac40ffc5bcb2",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -165,30 +165,31 @@
             "time": "2017-12-29T09:13:20+00:00"
         },
         {
-            "name": "davisshaver/_s",
+            "name": "davisshaver/terminal",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/davisshaver/_s.git",
-                "reference": "3b7316f8035448b2c5a363d4ef7f40dce9978ae0"
+                "url": "https://github.com/davisshaver/terminal.git",
+                "reference": "2ff350f4cdb867312b963041b5d99d8601b89272"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/_s/zipball/3b7316f8035448b2c5a363d4ef7f40dce9978ae0",
-                "reference": "3b7316f8035448b2c5a363d4ef7f40dce9978ae0",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/2ff350f4cdb867312b963041b5d99d8601b89272",
+                "reference": "2ff350f4cdb867312b963041b5d99d8601b89272",
                 "shasum": ""
             },
-            "type": "project",
-            "description": "Starter theme for a Philly Publishing site, hosted on Pantheon & based on Automattic's undercores theme.",
+            "type": "wordpress-theme",
+            "description": "Starter theme for a Philly Publishing site, hosted on Pantheon.",
             "keywords": [
                 "wordpress",
                 "wordpress-api",
                 "wordpress-development"
             ],
             "support": {
-                "source": "https://github.com/davisshaver/_s/tree/1.0.1"
+                "source": "https://github.com/davisshaver/terminal/tree/0.0.1",
+                "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2017-12-31T18:26:14+00:00"
+            "time": "2017-12-31T18:47:44+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -5045,7 +5046,7 @@
     "aliases": [],
     "minimum-stability": "alpha",
     "stability-flags": {
-        "davisshaver/_s": 20,
+        "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "wpackagist-plugin/rest-api-console": 20,
         "wpackagist-plugin/wp-api-menus": 20,
