@@ -17,10 +17,15 @@ class Theme {
 		add_filter( 'login_headerurl', [ $this, 'railyard_logo_url' ] );
 		add_filter( 'max_srcset_image_width', '__return_true' );
 		remove_action( 'welcome_panel', [ $this, 'wp_welcome_panel' ] );
+		add_action( 'init', [ $this, 'remove_gutenberg_menu' ] );
 
 		add_action( 'wp_head', function() {
 			echo '<meta name="twitter:dnt" content="on">';
 		});
+	}
+
+	public function remove_gutenberg_menu() {
+		remove_action( 'admin_menu', 'gutenberg_menu' );
 	}
 
 	public function railyard_login_logo() {
