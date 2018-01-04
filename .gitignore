@@ -5,6 +5,9 @@
 # Enviroment
 .env
 
+# Notes
+notes.md
+
 # VSCode settings
 .vscode/
 

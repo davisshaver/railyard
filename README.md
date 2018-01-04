@@ -34,6 +34,10 @@ New sites are ready to go with `lando start` from the project root. See `.env.sa
 
 You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
 
+You may need to reset a password. You can do this using WP-CLI: `lando wp user update admin --user_pass="PASSWORD"`.
+
+**Tip:** We ignore the file `notes.md` in the repository if you would like to stash commands here for use in the future.
+
 WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`. You should also change the Lando name to match your app name (usually same as repo name). If you have multiple Lando apps running, you may also need to change the external access port for the database.
 
 Try to minimize rebuilds of the app, which can take a bit of time due to the various Composer and other required build routines.
