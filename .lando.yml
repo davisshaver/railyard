@@ -46,7 +46,7 @@ services:
   database:
     portforward: 3307
   node:
-    type: node:"latest"
+    type: node:8
     command:
       - "cd web/wp-content/mu-plugins/gutenberg/"
       - "npm install"
