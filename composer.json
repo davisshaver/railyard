@@ -119,15 +119,12 @@
     "convert-to-innodb": [
       "php ./scripts/composer/convert-to-innodb.php"
     ],
-    "build-gutenberg": "bash ./scripts/composer/build-gutenberg",
     "build-assets": [
       "@prepare-for-pantheon",
-      "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress",
-      "@build-gutenberg"
+      "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
     "build-assets-dev": [
-      "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress",
-      "@build-gutenberg"
+      "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
     "prepare-for-pantheon": "WordPressProject\\composer\\ScriptHandler::prepareForPantheon",
     "cleanup": [
