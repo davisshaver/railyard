@@ -119,7 +119,7 @@
     "convert-to-innodb": [
       "php ./scripts/composer/convert-to-innodb.php"
     ],
-    "build-gutenberg": "cd web/wp-content/mu-plugins/gutenberg && npm install && npm run build",
+    "build-gutenberg": "bash ./scripts/composer/build-gutenberg",
     "build-assets": [
       "@prepare-for-pantheon",
       "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress",

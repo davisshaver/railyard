@@ -1,0 +1,3 @@
+#!/bin/bash
+
+cd web/wp-content/mu-plugins/gutenberg && npm install && npm run build

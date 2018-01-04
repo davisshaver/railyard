@@ -42,6 +42,8 @@ tooling:
     cmd:
       - composer
       - code-sniff
+  npm:
+    service: node
   test:
     service: appserver
     cmd:

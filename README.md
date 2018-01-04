@@ -34,7 +34,7 @@ New sites are ready to go with `lando start` from the project root. See `.env.sa
 
 You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
 
-WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`.
+WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`. You should also change the Lando name to match your app name (usually same as repo name). If you have multiple Lando apps running, you may also need to change the external access port for the database.
 
 **Note:** Offline development with Lando requires configuration via [DNSMasq](https://docs.devwithlando.io/tutorials/offline-dev.html).
 
