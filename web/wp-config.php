@@ -141,8 +141,12 @@ if ( isset( $_ENV['PANTHEON_ENVIRONMENT'] ) ):
 		}
 		define( 'WP_HOME', $scheme . '://' . $_SERVER['HTTP_HOST'] );
 		define( 'WP_SITEURL', $scheme . '://' . $_SERVER['HTTP_HOST'] . '/wp' );
-
+	} else if ( getenv( 'WP_HOME' ) ) {
+		$site_url = getenv( 'WP_HOME' );
+		define( 'WP_HOME', $site_url );
+		define( 'WP_SITEURL', $site_url . 'wp/' );
 	}
+
 	// Don't show deprecations; useful under PHP 5.5
 	error_reporting( E_ALL ^ E_DEPRECATED );
 	// Force the use of a safe temp directory when in a container
