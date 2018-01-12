@@ -8,25 +8,7 @@ These tools should be installed on your local system before you begin.
 
 - Composer
 - PHP
-- Terminus
-   Requires:
-   - Build Tools Plugin
-   - Authentication w/ `terminus auth:login`
-   - Composer plugin
 - Lando
-
-Recommended:
-
-- AWS CLI
-- GoAccess
-  After you have installed GoAccess, add the following lines to your GoAccess configuration:
-
-  ```
-  # Log output for Railyard
-  time-format %H:%M:%S
-  date-format %d/%b/%Y
-  log-format %h - %^ [%d:%t %^]  "%r" %s %b "%R" "%u" %T "%^"%
-  ```
 
 ### Lando workflow
 
@@ -43,45 +25,6 @@ WordPress will accept requests at any hostname. If you would like to change the 
 Try to minimize rebuilds of the app, which can take a bit of time due to the various Composer and other required build routines.
 
 **Note:** Offline development with Lando requires configuration via [DNSMasq](https://docs.devwithlando.io/tutorials/offline-dev.html).
-
-### Launching a new site
-
-  1. Setup access tokens in your local environment.
-
-  ```
-  export GITHUB_TOKEN=[REDACTED]
-  export CIRCLE_TOKEN=[REDACTED]
-  ```
-
-  **Note:** Later you may want to add the `SITE_GUID` and `PACKAGIST_TOKEN`/`PACKAGIST_USER` to your environment. We'll use these to collect logs and download private repos, respectively.
-
-  2. Create a new site.
-  
-  ```
-  terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
-  ```
-
-  **Note:** You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
-
-  **Warning:** This step will create a new Pantheon sandbox site and public Github repository.
- 
-  3. Make the Github repository private.
-
-  4. Configure optional secrets in the CircleCI environment.
-
-  - Packagist._com_ Token
-  - Slack Webhook URL
-
-  **Warning:** You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
-
-### Merging upstream updates
-The git tree of this repository is based on the upstream Pantheon project, but child repositories begin with fresh histories. We recommend this strategy of merging upstream updates into the site repository:
-
-```
-git pull railyard master --allow-unrelated-histories
-```
-
-## Logs
 
 ## Existing site import
 
@@ -162,7 +105,7 @@ unset AWS_SECRET_ACCESS_KEY
 unset AWS_DEFAULT_REGION
 ```
 
-If you have setup and activated S3 Uploads, image files should load at this point. You may also want to sync all or part of S3 bucket to your Pantheon server for redundancy. 
+If you have setup and activated S3 Uploads, image files should load at this point. You may also want to sync all or part of S3 bucket to your server for redundancy. 
 
 For local development, S3 Uploads [suggests the following](https://github.com/humanmade/S3-Uploads#offline-development):
 

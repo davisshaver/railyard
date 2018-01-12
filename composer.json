@@ -1,12 +1,11 @@
 {
   "name": "davisshaver/railyard",
-  "description": "Starter kit for a Philly Publishing site, hosted on Pantheon.",
+  "description": "Starter kit for a Philly Publishing site.",
   "type": "project",
   "keywords": [
     "circleci",
     "github-api",
     "lando",
-    "pantheon",
     "wordpress",
     "wordpress-development"
   ],
@@ -35,13 +34,10 @@
     "davisshaver/terminal": "dev-master",
     "humanmade/s3-uploads": "^2.0@beta",
     "oomphinc/composer-installers-extender": "^1.1",
-    "pantheon-systems/quicksilver-pushback": "^1.0",
-    "pantheon-systems/wordpress-composer": "^4.8.2",
     "roots/wp-password-bcrypt": "^1.0.0",
     "rvtraveller/qs-composer-installer": "^1.1",
     "wikimedia/composer-merge-plugin": "^1.4",
     "wordpress/gutenberg": "^1.9.1",
-    "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
     "wpackagist-plugin/rest-api-console": "dev-master",
     "wpackagist-plugin/wp-api-menus": "dev-master",
     "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
@@ -97,17 +93,10 @@
         "merge-scripts": true
     },
     "wordpress-install-dir": "web/wp",
-    "build-env": {
-      "install-cms": [
-        "wp core install --title={site-name} --url={site-url} --admin_user={account-name} --admin_email={account-mail} --admin_password={account-pass}",
-        "wp option update permalink_structure '/%year%/%monthnum%/%day%/%postname%/'"
-      ]
-    },
     "installer-paths": {
       "web/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
       "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
-      "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"]
     }
   },
   "autoload": {
@@ -116,17 +105,12 @@
     ]
   },
   "scripts": {
-    "convert-to-innodb": [
-      "php ./scripts/composer/convert-to-innodb.php"
-    ],
     "build-assets": [
-      "@prepare-for-pantheon",
       "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
     "build-assets-dev": [
       "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
-    "prepare-for-pantheon": "WordPressProject\\composer\\ScriptHandler::prepareForPantheon",
     "cleanup": [
       "bash ./scripts/composer/cleanup-composer"
     ],

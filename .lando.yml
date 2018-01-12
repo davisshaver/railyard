@@ -1,9 +1,9 @@
 name: railyard
-recipe: pantheon
+recipe: wordpress
 config:
-  disableAutoComposerInstall: true
-  env: dev
-  framework: wordpress
+  php: 'hhvm'
+  via: nginx
+  database: mariadb
   webroot: web
   xdebug: true
 services:
@@ -13,20 +13,10 @@ services:
         if [ -n "$GITHUB_TOKEN" ] ; then
           cd $LANDO_MOUNT && composer config --global --auth --unset github-oauth.github.com && composer config --global github-oauth.github.com $GITHUB_TOKEN
         fi
-        if [ -n "$TERMINUS_TOKEN" ] ; then
-          cd $LANDO_MOUNT && terminus auth:login --machine-token=$TERMINUS_TOKEN
-        fi
         if [ -n "$PACKAGIST_TOKEN" ] && [ -n "$PACKAGIST_USER" ] ; then
           cd $LANDO_MOUNT && composer config --global --auth http-basic.repo.packagist.com $PACKAGIST_USER $PACKAGIST_TOKEN
         fi
-        mkdir -p ~/.terminus/plugins
         composer config --global process-timeout 2000
-        if [ ! -d ~/.terminus/plugins/terminus-build-tools-plugin ] ; then
-          composer create-project -d ~/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:2.0.0-alpha4
-        fi
-        if [ ! -d ~/.terminus/plugins/terminus-secrets-plugin ] ; then
-          composer create-project -d ~/.terminus/plugins pantheon-systems/terminus-secrets-plugin:~1
-        fi
         cd $LANDO_MOUNT && composer build-assets-dev
         if [ -n "$INSTALL_WP_REVISIONS_CLI" ] ; then
           cd $LANDO_APP && wp package install trepmal/wp-revisions-cli
@@ -74,7 +64,6 @@ events:
     - lando wp plugin activate https-mixed-content-detector  
     - lando wp plugin activate log-deprecated-notices
     - lando wp plugin activate wp-native-php-sessions
-    - lando wp plugin activate pantheon-advanced-page-cache
     - lando wp plugin activate query-monitor
     - lando wp plugin activate rest-api-console
     - lando wp plugin activate wp-rest-api-log

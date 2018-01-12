@@ -1,11 +1,4 @@
 {
-  "scripts": {
-    "collect-logs": "(cd site-logs; bash ../private/tooling/logs/collect_logs.sh $SITE_GUID)" ,
-    "send-logs": "bash private/tooling/logs/send_logs.sh",
-    "goaccess:dev": "access_getlogs --site=$SITE_NAME --env=dev",
-    "goaccess:test": "access_getlogs --site=$SITE_NAME --env=test",
-    "goaccess:live": "access_getlogs --site=$SITE_NAME --env=live"
-  },
   "name": "railyard",
   "version": "1.01",
   "license": "MIT",

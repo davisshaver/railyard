@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "f3bd6c38f6af106c0e73ac40ffc5bcb2",
+    "content-hash": "c5ebf9fe5d58b9716cda33e6e84f6de1",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -170,15 +170,25 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "2ff350f4cdb867312b963041b5d99d8601b89272"
+                "reference": "53c4f88d94d86e620d53f06787dae61d91d6b9d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/2ff350f4cdb867312b963041b5d99d8601b89272",
-                "reference": "2ff350f4cdb867312b963041b5d99d8601b89272",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/53c4f88d94d86e620d53f06787dae61d91d6b9d2",
+                "reference": "53c4f88d94d86e620d53f06787dae61d91d6b9d2",
                 "shasum": ""
             },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "*",
+                "wp-coding-standards/wpcs": "^0.14.0"
+            },
             "type": "wordpress-theme",
+            "scripts": {
+                "code-sniff": [
+                    "./vendor/bin/phpcs --config-set installed_paths vendor/wp-coding-standards/wpcs",
+                    "./vendor/bin/phpcs ."
+                ]
+            },
             "description": "Starter theme for a Philly Publishing site, hosted on Pantheon.",
             "keywords": [
                 "wordpress",
@@ -186,10 +196,10 @@
                 "wordpress-development"
             ],
             "support": {
-                "source": "https://github.com/davisshaver/terminal/tree/0.0.1",
+                "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2017-12-31T18:47:44+00:00"
+            "time": "2018-01-11T10:51:51+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -226,54 +236,6 @@
                 "wordpress"
             ],
             "time": "2017-03-15T04:01:31+00:00"
-        },
-        {
-            "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
-                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
-                "shasum": ""
-            },
-            "require": {
-                "composer-plugin-api": "^1.0"
-            },
-            "conflict": {
-                "composer/installers": "<1.0.6"
-            },
-            "require-dev": {
-                "composer/composer": "1.0.*@dev"
-            },
-            "type": "composer-plugin",
-            "extra": {
-                "class": "johnpbloch\\Composer\\WordPressCorePlugin"
-            },
-            "autoload": {
-                "psr-0": {
-                    "johnpbloch\\Composer\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "John P. Bloch",
-                    "email": "me@johnpbloch.com"
-                }
-            ],
-            "description": "A custom installer to handle deploying WordPress with composer",
-            "keywords": [
-                "wordpress"
-            ],
-            "time": "2015-06-11T15:15:30+00:00"
         },
         {
             "name": "oomphinc/composer-installers-extender",
@@ -316,62 +278,6 @@
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
             "time": "2017-03-31T16:57:39+00:00"
-        },
-        {
-            "name": "pantheon-systems/quicksilver-pushback",
-            "version": "1.0.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pantheon-systems/quicksilver-pushback.git",
-                "reference": "32c65effd6802bdf829f1c68fb75ade2bd5894a0"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/quicksilver-pushback/zipball/32c65effd6802bdf829f1c68fb75ade2bd5894a0",
-                "reference": "32c65effd6802bdf829f1c68fb75ade2bd5894a0",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "quicksilver-script",
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "Push commits made via the Pantheon dashboard back to original GitHub repository.",
-            "time": "2017-07-21T17:10:28+00:00"
-        },
-        {
-            "name": "pantheon-systems/wordpress-composer",
-            "version": "4.9.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/pantheon-systems/wordpress-composer.git",
-                "reference": "770498d1f574886e4a1f437c6c44275f817860cb"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/pantheon-systems/wordpress-composer/zipball/770498d1f574886e4a1f437c6c44275f817860cb",
-                "reference": "770498d1f574886e4a1f437c6c44275f817860cb",
-                "shasum": ""
-            },
-            "require": {
-                "johnpbloch/wordpress-core-installer": "~0.1"
-            },
-            "type": "wordpress-core",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.x-dev"
-                },
-                "wordpress-install-dir": "web/wp"
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "WordPress for Pantheon with a composer.json file.",
-            "time": "2017-11-29T22:32:14+00:00"
         },
         {
             "name": "roots/wp-password-bcrypt",
@@ -559,26 +465,6 @@
                 "source": "https://github.com/WordPress/gutenberg/tree/v1.9.1"
             },
             "time": "2017-12-13T14:31:24+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/pantheon-advanced-page-cache",
-            "version": "0.1.5",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/pantheon-advanced-page-cache/",
-                "reference": "tags/0.1.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/pantheon-advanced-page-cache.0.1.5.zip",
-                "reference": "tags/0.1.5",
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/pantheon-advanced-page-cache/"
         },
         {
             "name": "wpackagist-plugin/rest-api-console",
@@ -2668,16 +2554,16 @@
         },
         {
             "name": "phpunit/phpunit-mock-objects",
-            "version": "5.0.5",
+            "version": "5.0.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/phpunit-mock-objects.git",
-                "reference": "283b9f4f670e3a6fd6c4ff95c51a952eb5c75933"
+                "reference": "33fd41a76e746b8fa96d00b49a23dadfa8334cdf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/283b9f4f670e3a6fd6c4ff95c51a952eb5c75933",
-                "reference": "283b9f4f670e3a6fd6c4ff95c51a952eb5c75933",
+                "url": "https://api.github.com/repos/sebastianbergmann/phpunit-mock-objects/zipball/33fd41a76e746b8fa96d00b49a23dadfa8334cdf",
+                "reference": "33fd41a76e746b8fa96d00b49a23dadfa8334cdf",
                 "shasum": ""
             },
             "require": {
@@ -2723,7 +2609,7 @@
                 "mock",
                 "xunit"
             ],
-            "time": "2017-12-10T08:01:53+00:00"
+            "time": "2018-01-06T05:45:45+00:00"
         },
         {
             "name": "psr/container",
@@ -2877,12 +2763,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0703d860f83775029738dc4a519301e8e3d81853"
+                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0703d860f83775029738dc4a519301e8e3d81853",
-                "reference": "0703d860f83775029738dc4a519301e8e3d81853",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/fe89fd2178cabef137b9a76fa91d64925474b956",
+                "reference": "fe89fd2178cabef137b9a76fa91d64925474b956",
                 "shasum": ""
             },
             "conflict": {
@@ -2933,7 +2819,7 @@
                 "oro/platform": ">=1.7,<1.7.4",
                 "phpmailer/phpmailer": ">=5,<5.2.24",
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
-                "phpxmlrpc/extras": "<6.0.1",
+                "phpxmlrpc/extras": "<0.6.1",
                 "pusher/pusher-php-server": "<2.2.1",
                 "sabre/dav": ">=1.6,<1.6.99|>=1.7,<1.7.11|>=1.8,<1.8.9",
                 "shopware/shopware": "<5.2.25",
@@ -3014,7 +2900,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2017-12-24T19:52:27+00:00"
+            "time": "2018-01-07T00:56:33+00:00"
         },
         {
             "name": "sebastian/code-unit-reverse-lookup",
@@ -3063,16 +2949,16 @@
         },
         {
             "name": "sebastian/comparator",
-            "version": "2.1.1",
+            "version": "2.1.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sebastianbergmann/comparator.git",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f"
+                "reference": "11c07feade1d65453e06df3b3b90171d6d982087"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
-                "reference": "b11c729f95109b56a0fe9650c6a63a0fcd8c439f",
+                "url": "https://api.github.com/repos/sebastianbergmann/comparator/zipball/11c07feade1d65453e06df3b3b90171d6d982087",
+                "reference": "11c07feade1d65453e06df3b3b90171d6d982087",
                 "shasum": ""
             },
             "require": {
@@ -3123,7 +3009,7 @@
                 "compare",
                 "equality"
             ],
-            "time": "2017-12-22T14:50:35+00:00"
+            "time": "2018-01-12T06:34:42+00:00"
         },
         {
             "name": "sebastian/diff",
