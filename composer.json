@@ -147,7 +147,6 @@
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": [
         "wordpress/gutenberg",
-        "humanmade/s3-uploads",
         "type:wordpress-muplugin"
       ],
       "public/wp-content/plugins/{$name}/": [

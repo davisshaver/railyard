@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4dcbe57b7a9fb628a74e8209183263d1",
+    "content-hash": "3f84632084f9e34bf5f6c6eea4d88a0f",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "33da1b9ae301f6f5a855b4042b622adcc82f89f9"
+                "reference": "411c5159e78683c3f2b170fdd1bb89549cf19ff6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/33da1b9ae301f6f5a855b4042b622adcc82f89f9",
-                "reference": "33da1b9ae301f6f5a855b4042b622adcc82f89f9",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/411c5159e78683c3f2b170fdd1bb89549cf19ff6",
+                "reference": "411c5159e78683c3f2b170fdd1bb89549cf19ff6",
                 "shasum": ""
             },
             "require-dev": {
@@ -199,7 +199,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-14T12:05:07+00:00"
+            "time": "2018-01-14T22:23:30+00:00"
         },
         {
             "name": "humanmade/s3-uploads",

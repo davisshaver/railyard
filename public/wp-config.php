@@ -43,7 +43,7 @@ if ( getenv( 'WP_HOME' ) !== false ) {
 } elseif ( ! empty( $_SERVER['HTTP_HOST'] ) ) {
 	$site_url = 'https://' . $_SERVER['HTTP_HOST'] . '/';
 } else {
-	$site_url = 'localhost';
+	$site_url = 'localhost/';
 }
 
 define( 'WP_HOME', $site_url );

@@ -11,7 +11,6 @@
 $railyard_mu_plugins = array(
 	'custom/railyard/railyard.php',
 	'gutenberg/gutenberg.php',
-	's3-uploads/s3-uploads.php',
 	'kinsta-mu-plugins/kinsta-mu-plugins.php'
 );
 
