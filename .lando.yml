@@ -1,0 +1,7 @@
+name: railyard
+recipe: wordpress
+config:
+  php: 'hhvm'
+  webroot: web
+  database: mariadb
+  xdebug: true

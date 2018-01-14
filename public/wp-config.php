@@ -1,11 +1,11 @@
 <?php
 /*
- * Don't show deprecations
+ * Don't show deprecations.
  */
 error_reporting( E_ALL ^ E_DEPRECATED );
 
 /**
- * Set root path
+ * Set root path.
  */
 $rootPath = realpath( __DIR__ . '/..' );
 
@@ -15,33 +15,25 @@ $rootPath = realpath( __DIR__ . '/..' );
 require_once( $rootPath . '/vendor/autoload.php' );
 
 /**
- * Disallow on server file edits
+ * Disallow on server file edits.
  */
 define( 'DISALLOW_FILE_EDIT', true );
 define( 'DISALLOW_FILE_MODS', true );
 
 /**
- * Force SSL
+ * Force SSL.
  */
 define( 'FORCE_SSL_ADMIN', true );
 
 /**
- * Limit post revisions
+ * Limit post revisions.
  */
 define( 'WP_POST_REVISIONS', 3 );
 
 /**
- * Define site and home URLs
+ * Define site and home URLs.
  */
-// HTTP is still the default scheme for now.
-$scheme = 'http';
-// If we have detected that the end use is HTTPS, make sure we pass that
-// through here, so <img> tags and the like don't generate mixed-mode
-// content warnings.
-if ( isset( $_SERVER['HTTP_USER_AGENT_HTTPS'] ) && $_SERVER['HTTP_USER_AGENT_HTTPS'] == 'ON' ) {
-	$scheme = 'https';
-}
-$site_url = getenv( 'WP_HOME' ) !== false ? getenv( 'WP_HOME' ) : $scheme . '://' . $_SERVER['HTTP_HOST'] . '/';
+$site_url = getenv( 'WP_HOME' ) !== false ? getenv( 'WP_HOME' ) : 'https://' . $_SERVER['HTTP_HOST'] . '/';
 define( 'WP_HOME', $site_url );
 define( 'WP_SITEURL', $site_url . 'wp/' );
 
@@ -97,6 +89,16 @@ if ( getenv( 'AWS_KEY_SECRET' ) !== false ) {
 }
 if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
 	define( 'S3_UPLOADS_REGION', getenv( 'S3_UPLOADS_REGION' ) );
+}
+
+/* Inserted for Local by Flywheel. See: http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy */
+if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+	$_SERVER['HTTPS'] = 'on';
+}
+
+/* Inserted for Local by Flywheel. Fixes $is_nginx global for rewrites. */
+if (strpos($_SERVER['SERVER_SOFTWARE'], 'Flywheel/') !== false) {
+	$_SERVER['SERVER_SOFTWARE'] = 'nginx/1.10.1';
 }
 
 /**

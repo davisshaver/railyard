@@ -16,33 +16,33 @@ notes.md
 
 # Webroot #
 ###########
-!web/
-web/*
-!web/index.php
-!web/wp-cli.yml
-!web/wp-config.php
-!web/wp-content/
-web/wp-content/*
-!web/wp-content/mu-plugins/
-web/wp-content/mu-plugins/*
-!web/wp-content/mu-plugins/0-loader.php
-!web/wp-content/mu-plugins/custom
-!web/wp-content/mu-plugins/.gitkeep
-!web/wp-content/plugins/
-web/wp-content/plugins/*
-!web/wp-content/plugins/custom/
-!web/wp-content/plugins/.gitkeep
-!web/wp-content/themes
-web/wp-content/themes/*
-!web/wp-content/themes/custom/
-!web/wp-content/themes/.gitkeep
-!web/wp-content/config/
-web/wp
-!web/private/
-web/private/*
-!web/private/scripts/
-web/private/scripts/quicksilver
-!web/private/config/
+!public/
+public/*
+!public/index.php
+!public/wp-cli.yml
+!public/wp-config.php
+!public/wp-content/
+public/wp-content/*
+!public/wp-content/mu-plugins/
+public/wp-content/mu-plugins/*
+!public/wp-content/mu-plugins/0-loader.php
+!public/wp-content/mu-plugins/custom
+!public/wp-content/mu-plugins/.gitkeep
+!public/wp-content/plugins/
+public/wp-content/plugins/*
+!public/wp-content/plugins/custom/
+!public/wp-content/plugins/.gitkeep
+!public/wp-content/themes
+public/wp-content/themes/*
+!public/wp-content/themes/custom/
+!public/wp-content/themes/.gitkeep
+!public/wp-content/config/
+public/wp
+!public/private/
+public/private/*
+!public/private/scripts/
+public/private/scripts/quicksilver
+!public/private/config/
 !.circleci
 
 # Items below the cut line should not be uploaded to the server.
@@ -54,23 +54,23 @@ web/private/scripts/quicksilver
 
 # WordPress #
 ############
-web/wp-config-local.php
-web/wp-cli.local.yml
-web/wp-content/uploads
-web/wp-content/blogs.dir/
-web/wp-content/upgrade/
-web/wp-content/backup-db/
-web/wp-content/updraft/
-web/wp-content/backupwordpress-*/
-web/wp-content/managewp/backups/
-web/wp-content/advanced-cache.php
-web/wp-content/wp-cache-config.php
-web/sitemap.xml
-web/sitemap.xml.gz
+public/wp-config-local.php
+public/wp-cli.local.yml
+public/wp-content/uploads
+public/wp-content/blogs.dir/
+public/wp-content/upgrade/
+public/wp-content/backup-db/
+public/wp-content/updraft/
+public/wp-content/backupwordpress-*/
+public/wp-content/managewp/backups/
+public/wp-content/advanced-cache.php
+public/wp-content/wp-cache-config.php
+public/sitemap.xml
+public/sitemap.xml.gz
 *.log
 
-web/wp-content/cache/
-web/wp-content/backups/
+public/wp-content/cache/
+public/wp-content/backups/
 
 # Packages #
 ############
