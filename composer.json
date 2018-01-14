@@ -8,7 +8,7 @@
     "wordpress",
     "wordpress-development"
   ],
-  "minimum-stability": "alpha",
+  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "composer",
@@ -30,6 +30,7 @@
   "require": {
     "automattic/syndication": "^2.0.1",
     "composer/installers": "^1.3.0",
+    "johnpbloch/wordpress": "dev-master",
     "davisshaver/terminal": "dev-master",
     "humanmade/s3-uploads": "^2.0@beta",
     "oomphinc/composer-installers-extender": "^1.1",
@@ -80,11 +81,12 @@
         "merge-extra-deep": false,
         "merge-scripts": true
     },
-    "wordpress-install-dir": "web/wp",
+    "wordpress-install-dir": "public/wp",
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
       "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
+      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+      "public/wp/": ["type:wordpress-core"]
     }
   },
   "scripts": {
