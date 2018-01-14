@@ -1,5 +1,8 @@
 {
   "name": "railyard",
+  "scripts": {
+    "build-gutenberg": "cd web/wp-content/mu-plugins/gutenberg/ && npm install"
+  },
   "version": "1.01",
   "license": "MIT",
   "devDependencies": {

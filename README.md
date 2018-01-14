@@ -8,24 +8,18 @@ These tools should be installed on your local system before you begin.
 
 - Composer
 - PHP
-- Lando
 
-### Lando workflow
+### Local dev workflow
 
-New sites are ready to go with `lando start` from the project root. See `.env.sample` for keys supported in `.env`.
+New sites are ready to go from the project root. See `.env.sample` for keys supported in `.env`.
 
-You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
+You can use Lando, Local by Flywheel, or another local dev solution.
 
-You may need to reset a password. You can do this using WP-CLI: `lando wp user update admin --user_pass="PASSWORD"`.
+You may want to run `wp db import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
+
+You may need to reset a password. You can do this with `wp user update admin --user_pass="PASSWORD"`.
 
 **Tip:** We ignore the file `notes.md` in the repository if you would like to stash commands here for use in the future.
-
-WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`. You should also change the Lando name to match your app name (usually same as repo name). If you have multiple Lando apps running, you may also need to change the external access port for the database.
-
-Try to minimize rebuilds of the app, which can take a bit of time due to the various Composer and other required build routines.
-
-**Note:** Offline development with Lando requires configuration via [DNSMasq](https://docs.devwithlando.io/tutorials/offline-dev.html).
-
 ## Existing site import
 
 Here are some tips for cleaning up existing sites.
@@ -33,16 +27,15 @@ Here are some tips for cleaning up existing sites.
 1. Install the Revisions command for WP CLI and then delete. [See docs for more options.](https://github.com/trepmal/wp-revisions-cli).
 
 ```
-lando wp package install trepmal/wp-revisions-cli
-lando wp revisions clean --hard
-lando wp db optimize
+wp package install trepmal/wp-revisions-cli
+wp revisions clean --hard
+wp db optimize
 ```
 
 2. Delete transients.
 
 ```
-lando wp transient delete --all
-```
+wp transient delete --all```
 
 3. Delete pending comments and pingbacks.
 
@@ -129,8 +122,8 @@ However this function would need to be run repeatedly for the images to be clear
 You may also want to double check that all posts have a featured image. The featured image features was introduced in version 2.9 (December 18th, 2009).  Install [Run Command's Assign Featured Image](https://github.com/runcommand/assign-featured-images) package and then preview & run as follows:
 
 ```
-lando wp --url=onwardstate.lndo.site assign-featured-images --dry-run --only-missing
-lando wp --url=onwardstate.lndo.site assign-featured-images --only-missing
+wp --url=onwardstate.com assign-featured-images --dry-run --only-missing
+wp --url=onwardstate.com assign-featured-images --only-missing
 ```
 
 6. Removing subscribers.
@@ -138,7 +131,7 @@ lando wp --url=onwardstate.lndo.site assign-featured-images --only-missing
 We can use WP CLI to lookup subscribers and delete subscribers without posts.
 
 ```
-wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT DISTINCT post_author FROM os08_posts ) AND ID NOT IN (4)" --url=onwardstate.lndo.site | tail -n +2 ) --url=onwardstate.lndo.site --reassign=1
+wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT DISTINCT post_author FROM os08_posts ) AND ID NOT IN (4)" --url=onwardstate.com | tail -n +2 ) --url=onwardstate.com --reassign=1
 ```
 
 The `4` here is the admin ID, which can be obtained with somthing like `wp user list --role=administrator --field=ID`. Comma separate multiple administrator ID's to ignore.

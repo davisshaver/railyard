@@ -5,7 +5,6 @@
   "keywords": [
     "circleci",
     "github-api",
-    "lando",
     "wordpress",
     "wordpress-development"
   ],
@@ -133,9 +132,9 @@
       "./vendor/bin/phpunit tests/unit/*"
     ],
     "scrub-db": [
-      "lando wp package install trepmal/wp-revisions-cli",
-      "lando wp revisions clean --hard",
-      "lando wp db optimize"
+      "wp package install trepmal/wp-revisions-cli",
+      "wp revisions clean --hard",
+      "wp db optimize"
     ]
   }
 }
