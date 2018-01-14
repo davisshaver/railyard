@@ -1,8 +1,4 @@
 <?php
-/*
- * Don't show deprecations.
- */
-error_reporting( E_ALL ^ E_DEPRECATED );
 
 /**
  * Set root path.
@@ -13,6 +9,15 @@ $rootPath = realpath( __DIR__ . '/..' );
  * Include the Composer autoload
  */
 require_once( $rootPath . '/vendor/autoload.php' );
+$dotenv = new Dotenv\Dotenv( $rootPath );
+$dotenv->load();
+
+/*
+ * Don't show deprecations.
+ */
+if ( getenv( 'SHOW_ERRORS' ) && true === getenv( 'SHOW_ERRORS' ) ) {
+	error_reporting( E_ALL ^ E_DEPRECATED );
+}
 
 /**
  * Disallow on server file edits.
@@ -43,7 +48,7 @@ define( 'WP_SITEURL', $site_url . 'wp/' );
 define( 'DB_NAME', getenv( 'DB_NAME' ) );
 define( 'DB_USER', getenv( 'DB_USER' ) );
 define( 'DB_PASSWORD', getenv( 'DB_PASSWORD' ) !== false ? getenv( 'DB_PASSWORD' ) : '' );
-define( 'DB_HOST', getenv( 'DB_HOST' ) );
+define( 'DB_HOST', getenv( 'DB_HOST' ) !== false ? getenv( 'DB_HOST' ) : 'localhost' );
 
 /**
  * Set debug modes

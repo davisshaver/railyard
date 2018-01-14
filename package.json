@@ -1,9 +1,9 @@
 {
   "name": "railyard",
   "scripts": {
-    "build-gutenberg": "cd web/wp-content/mu-plugins/gutenberg/ && npm install"
+    "build-gutenberg": "cd public/wp-content/mu-plugins/gutenberg/ && npm install && npm run build",
+    "build-theme": "cd public/wp-content/themes/terminal/ && npm install && npm run build"
   },
-  "version": "1.01",
   "license": "MIT",
   "devDependencies": {
     "babel-eslint": "^8.0.2",
