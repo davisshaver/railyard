@@ -97,12 +97,12 @@ if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
 }
 
 /* Inserted for Local by Flywheel. See: http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy */
-if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https') {
+if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {
 	$_SERVER['HTTPS'] = 'on';
 }
 
 /* Inserted for Local by Flywheel. Fixes $is_nginx global for rewrites. */
-if (strpos($_SERVER['SERVER_SOFTWARE'], 'Flywheel/') !== false) {
+if ( isset( $_SERVER['SERVER_SOFTWARE'] ) && strpos ($_SERVER['SERVER_SOFTWARE'], 'Flywheel/' ) !== false ) {
 	$_SERVER['SERVER_SOFTWARE'] = 'nginx/1.10.1';
 }
 
