@@ -9,8 +9,10 @@
  */
 
 $railyard_mu_plugins = array(
-	'gutenberg/gutenberg.php',
 	'custom/railyard/railyard.php',
+	'gutenberg/gutenberg.php',
+	's3-uploads/s3-uploads.php',
+	'kinsta-mu-plugins/kinsta-mu-plugins.php'
 );
 
 foreach ( $railyard_mu_plugins as $railyard_mu_plugin ) {

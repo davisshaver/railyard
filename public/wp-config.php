@@ -38,7 +38,14 @@ define( 'WP_POST_REVISIONS', 3 );
 /**
  * Define site and home URLs.
  */
-$site_url = getenv( 'WP_HOME' ) !== false ? getenv( 'WP_HOME' ) : 'https://' . $_SERVER['HTTP_HOST'] . '/';
+if ( getenv( 'WP_HOME' ) !== false ) {
+	$site_url = getenv( 'WP_HOME' );
+} elseif ( ! empty( $_SERVER['HTTP_HOST'] ) ) {
+	$site_url = 'https://' . $_SERVER['HTTP_HOST'] . '/';
+} else {
+	$site_url = 'localhost';
+}
+
 define( 'WP_HOME', $site_url );
 define( 'WP_SITEURL', $site_url . 'wp/' );
 
@@ -95,6 +102,8 @@ if ( getenv( 'AWS_KEY_SECRET' ) !== false ) {
 if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
 	define( 'S3_UPLOADS_REGION', getenv( 'S3_UPLOADS_REGION' ) );
 }
+
+define( 'KINSTAMU_WHITELABEL', true );
 
 /* Inserted for Local by Flywheel. See: http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy */
 if ( isset( $_SERVER['HTTP_X_FORWARDED_PROTO'] ) && $_SERVER['HTTP_X_FORWARDED_PROTO'] === 'https' ) {

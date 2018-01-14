@@ -15,11 +15,10 @@ New sites are ready to go from the project root. See `.env.sample` for keys supp
 
 You can use Lando, Local by Flywheel, or another local dev solution.
 
-You may want to run `wp db import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
-
-You may need to reset a password. You can do this with `wp user update admin --user_pass="PASSWORD"`.
+You may want to run `wp db import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site. Doing this with a production database may take some time. If you are using a production database, you may need to reset a password at this point. You can do this with `wp user update admin --user_pass="PASSWORD"`.
 
 **Tip:** We ignore the file `notes.md` in the repository if you would like to stash commands here for use in the future.
+
 ## Existing site import
 
 Here are some tips for cleaning up existing sites.
@@ -35,7 +34,8 @@ wp db optimize
 2. Delete transients.
 
 ```
-wp transient delete --all```
+wp transient delete --all
+```
 
 3. Delete pending comments and pingbacks.
 
