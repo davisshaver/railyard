@@ -38,8 +38,10 @@ public/wp
 # Enviroment
 .env
 
-# Node
+# Main app node & built packages
 node_modules
+public/wp-content/themes/terminal/node_modules
+public/wp-content/mu-plugins/gutenberg/node_modules
 
 # S3 Credentials
 .s3-credentials.json
