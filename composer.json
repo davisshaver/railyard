@@ -1,16 +1,19 @@
 {
   "name": "davisshaver/railyard",
-  "description": "Starter kit for a Philly Publishing site, hosted on Pantheon.",
+  "description": "Starter kit for a Philly Publishing site.",
   "type": "project",
   "keywords": [
     "circleci",
     "github-api",
-    "lando",
-    "pantheon",
     "wordpress",
     "wordpress-development"
   ],
-  "minimum-stability": "alpha",
+  "autoload": {
+    "psr-4": {
+        "Dotenv\\": "src/"
+    }
+  },
+  "minimum-stability": "dev",
   "repositories": [
     {
       "type": "composer",
@@ -27,6 +30,61 @@
     {
       "type": "vcs",
       "url": "https://github.com/davisshaver/terminal/"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/retlehs/kinsta-mu-plugins"
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "retlehs/kinsta-mu-plugins",
+          "version": "2.0.2",
+          "type": "wordpress-muplugin",
+          "dist": {
+              "url": "https://github.com/retlehs/kinsta-mu-plugins/archive/2.0.2.zip",
+              "type": "zip"
+          },
+          "source": {
+              "url": "git@github.com:wp-premium/gravityforms.git",
+              "type": "git",
+              "reference": "tags/2.0.2"
+          }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "wp-premium/gravityforms",
+          "version": "2.2.5",
+          "type": "wordpress-plugin",
+          "dist": {
+              "url": "https://github.com/wp-premium/gravityforms/archive/2.2.5.zip",
+              "type": "zip"
+          },
+          "source": {
+              "url": "git@github.com:wp-premium/gravityforms.git",
+              "type": "git",
+              "reference": "tags/2.2.5"
+          }
+      }
+    },
+    {
+      "type": "package",
+      "package": {
+          "name": "wp-premium/gravityformsstripe",
+          "version": "2.3",
+          "type": "wordpress-plugin",
+          "dist": {
+              "url": "https://github.com/wp-premium/gravityformsstripe/archive/2.3.zip",
+              "type": "zip"
+          },
+          "source": {
+              "url": "git@github.com:wp-premium/gravityforms.git",
+              "type": "git",
+              "reference": "tags/2.3"
+          }
+      }
     }
   ],
   "require": {
@@ -34,41 +92,30 @@
     "composer/installers": "^1.3.0",
     "davisshaver/terminal": "dev-master",
     "humanmade/s3-uploads": "^2.0@beta",
+    "retlehs/kinsta-mu-plugins": "^2.0.2",
+    "johnpbloch/wordpress": "dev-master",
     "oomphinc/composer-installers-extender": "^1.1",
-    "pantheon-systems/quicksilver-pushback": "^1.0",
-    "pantheon-systems/wordpress-composer": "^4.8.2",
-    "roots/wp-password-bcrypt": "^1.0.0",
-    "rvtraveller/qs-composer-installer": "^1.1",
+    "vlucas/phpdotenv": "^2.4",
     "wikimedia/composer-merge-plugin": "^1.4",
     "wordpress/gutenberg": "^1.9.1",
-    "wpackagist-plugin/pantheon-advanced-page-cache": "^0.1.4",
-    "wpackagist-plugin/rest-api-console": "dev-master",
-    "wpackagist-plugin/wp-api-menus": "dev-master",
-    "wpackagist-plugin/wp-native-php-sessions": "^0.6.0",
-    "wpackagist-plugin/wp-rest-api-log": "dev-master",
-    "wpackagist-plugin/wp-rest-api-sidebars": "dev-master"
+    "wpackagist-plugin/unipress-api": "dev-master",
+    "wpackagist-plugin/simple-local-avatars": "dev-master",
+    "wp-premium/gravityforms": "^2.2.5",
+    "wp-premium/gravityformsstripe": "^2.3"
   },
   "require-dev": {
-    "behat/mink-goutte-driver": "^1.2",
-    "behat/mink-selenium2-driver": "^1.3",
-    "brain/monkey": "^1.4",
     "danielbachhuber/composer-lock-updater": "^0.2.1",
-    "paulgibbs/behat-wordpress-extension": "0.8.0",
-    "phpunit/phpunit": "^6.1",
     "roave/security-advisories": "dev-master",
     "squizlabs/php_codesniffer": "^2.9.0",
     "wp-coding-standards/wpcs": "dev-master",
     "wpackagist-plugin/debug-bar-actions-and-filters-addon": "dev-master",
     "wpackagist-plugin/debug-bar-console": "dev-master",
     "wpackagist-plugin/debug-bar": "dev-master",
-    "wpackagist-plugin/developer-loggers-for-simple-history": "dev-master",
-    "wpackagist-plugin/email-log": "dev-master",
     "wpackagist-plugin/https-mixed-content-detector": "dev-master",
     "wpackagist-plugin/log-deprecated-notices": "dev-master",
     "wpackagist-plugin/query-monitor": "dev-master",
     "wpackagist-plugin/rewrite-rules-inspector": "dev-master",
     "wpackagist-plugin/rewrite-testing": "dev-master",
-    "wpackagist-plugin/simple-history": "dev-master",
     "wpackagist-plugin/transients-manager": "dev-master",
     "wpackagist-plugin/user-switching": "dev-master",
     "wpackagist-plugin/wp-crontrol": "dev-master",
@@ -96,62 +143,45 @@
         "merge-extra-deep": false,
         "merge-scripts": true
     },
-    "wordpress-install-dir": "web/wp",
-    "build-env": {
-      "install-cms": [
-        "wp core install --title={site-name} --url={site-url} --admin_user={account-name} --admin_email={account-mail} --admin_password={account-pass}",
-        "wp option update permalink_structure '/%year%/%monthnum%/%day%/%postname%/'"
-      ]
-    },
+    "wordpress-install-dir": "public/wp",
     "installer-paths": {
-      "web/wp-content/mu-plugins/{$name}/": ["wordpress/gutenberg"],
-      "web/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
-      "web/wp-content/themes/{$name}/": ["type:wordpress-theme"],
-      "web/private/scripts/quicksilver/{$name}/": ["type:quicksilver-script"]
+      "public/wp-content/mu-plugins/{$name}/": [
+        "wordpress/gutenberg",
+        "type:wordpress-muplugin"
+      ],
+      "public/wp-content/plugins/{$name}/": [
+        "type:wordpress-plugin"
+      ],
+      "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],
+      "public/wp/": ["type:wordpress-core"]
     }
   },
-  "autoload": {
-    "classmap": [
-      "scripts/composer/ScriptHandler.php"
-    ]
-  },
   "scripts": {
-    "convert-to-innodb": [
-      "php ./scripts/composer/convert-to-innodb.php"
-    ],
     "build-assets": [
-      "@prepare-for-pantheon",
       "composer update --no-dev --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
     "build-assets-dev": [
       "composer update --no-ansi --no-interaction --optimize-autoloader --no-progress"
     ],
-    "prepare-for-pantheon": "WordPressProject\\composer\\ScriptHandler::prepareForPantheon",
     "cleanup": [
       "bash ./scripts/composer/cleanup-composer"
     ],
     "post-install-cmd": [
-      "@cleanup",
-      "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
+      "@cleanup"
     ],
     "post-update-cmd": [
-      "@cleanup",
-      "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
+      "@cleanup"
     ],
     "post-create-project-cmd": [
-      "@cleanup",
-      "WordPressProject\\composer\\ScriptHandler::createRequiredFiles"
+      "@cleanup"
     ],
     "code-sniff": [
       "./vendor/bin/phpcs ./web/wp-content/plugins/custom/"
     ],
-    "unit-test": [
-      "./vendor/bin/phpunit tests/unit/*"
-    ],
     "scrub-db": [
-      "lando wp package install trepmal/wp-revisions-cli",
-      "lando wp revisions clean --hard",
-      "lando wp db optimize"
+      "wp package install trepmal/wp-revisions-cli",
+      "wp revisions clean --hard",
+      "wp db optimize"
     ]
   }
 }

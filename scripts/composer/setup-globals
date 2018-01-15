@@ -1,0 +1,23 @@
+if [ -n "$GITHUB_TOKEN" ] ; then
+  composer config --global --auth --unset github-oauth.github.com && composer config --global github-oauth.github.com $GITHUB_TOKEN
+fi
+if [ -n "$PACKAGIST_TOKEN" ] && [ -n "$PACKAGIST_USER" ] ; then
+  composer config --global --auth http-basic.repo.packagist.com $PACKAGIST_USER $PACKAGIST_TOKEN
+fi
+composer config --global process-timeout 2000
+composer build-assets-dev
+if [ -n "$INSTALL_WP_REVISIONS_CLI" ] ; then
+  wp package install trepmal/wp-revisions-cli
+fi
+if [ -n "$INSTALL_WP_DICTATOR" ] ; then
+  wp package install danielbachhuber/dictator
+fi
+if [ -n "$INSTALL_WP_CLI_STAT_COMMAND" ] ; then
+  wp package install danielbachhuber/wp-cli-stat-command
+fi
+if [ -n "$INSTALL_WP_CLI_UPDATE_VERIFY" ] ; then
+  wp package install danielbachhuber/update-verify
+fi
+if [ -n "$INSTALL_WP_CLI_LOGIN_COMMAND" ] ; then
+  wp package install aaemnnosttv/wp-cli-login-command
+fi

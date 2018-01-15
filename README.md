@@ -8,80 +8,16 @@ These tools should be installed on your local system before you begin.
 
 - Composer
 - PHP
-- Terminus
-   Requires:
-   - Build Tools Plugin
-   - Authentication w/ `terminus auth:login`
-   - Composer plugin
-- Lando
 
-Recommended:
+### Local dev workflow
 
-- AWS CLI
-- GoAccess
-  After you have installed GoAccess, add the following lines to your GoAccess configuration:
+New sites are ready to go from the project root. See `.env.sample` for keys supported in `.env`.
 
-  ```
-  # Log output for Railyard
-  time-format %H:%M:%S
-  date-format %d/%b/%Y
-  log-format %h - %^ [%d:%t %^]  "%r" %s %b "%R" "%u" %T "%^"%
-  ```
+You can use Lando, Local by Flywheel, or another local dev solution.
 
-### Lando workflow
-
-New sites are ready to go with `lando start` from the project root. See `.env.sample` for keys supported in `.env`.
-
-You may want to run `lando db-import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site.
-
-You may need to reset a password. You can do this using WP-CLI: `lando wp user update admin --user_pass="PASSWORD"`.
+You may want to run `wp db import ./private/local/railyard.sql.gz` next. This populates the database to simulate a typical Philly Publishing site. Doing this with a production database may take some time. If you are using a production database, you may need to reset a password at this point. You can do this with `wp user update admin --user_pass="PASSWORD"`.
 
 **Tip:** We ignore the file `notes.md` in the repository if you would like to stash commands here for use in the future.
-
-WordPress will accept requests at any hostname. If you would like to change the hostname, simply modify the proxy edge reference in `.lando.yml`. You should also change the Lando name to match your app name (usually same as repo name). If you have multiple Lando apps running, you may also need to change the external access port for the database.
-
-Try to minimize rebuilds of the app, which can take a bit of time due to the various Composer and other required build routines.
-
-**Note:** Offline development with Lando requires configuration via [DNSMasq](https://docs.devwithlando.io/tutorials/offline-dev.html).
-
-### Launching a new site
-
-  1. Setup access tokens in your local environment.
-
-  ```
-  export GITHUB_TOKEN=[REDACTED]
-  export CIRCLE_TOKEN=[REDACTED]
-  ```
-
-  **Note:** Later you may want to add the `SITE_GUID` and `PACKAGIST_TOKEN`/`PACKAGIST_USER` to your environment. We'll use these to collect logs and download private repos, respectively.
-
-  2. Create a new site.
-  
-  ```
-  terminus build:project:create davisshaver/railyard popularhistory --team="Philly Publishing"
-  ```
-
-  **Note:** You will be asked to authenticate with the Pantheon git repository using your Pantheon dashboard password. Prevent this step by authenticating git with an SSH key.
-
-  **Warning:** This step will create a new Pantheon sandbox site and public Github repository.
- 
-  3. Make the Github repository private.
-
-  4. Configure optional secrets in the CircleCI environment.
-
-  - Packagist._com_ Token
-  - Slack Webhook URL
-
-  **Warning:** You should *disable* the advanced setting `Pass secrets to builds from forked pull requests`.
-
-### Merging upstream updates
-The git tree of this repository is based on the upstream Pantheon project, but child repositories begin with fresh histories. We recommend this strategy of merging upstream updates into the site repository:
-
-```
-git pull railyard master --allow-unrelated-histories
-```
-
-## Logs
 
 ## Existing site import
 
@@ -90,15 +26,15 @@ Here are some tips for cleaning up existing sites.
 1. Install the Revisions command for WP CLI and then delete. [See docs for more options.](https://github.com/trepmal/wp-revisions-cli).
 
 ```
-lando wp package install trepmal/wp-revisions-cli
-lando wp revisions clean --hard
-lando wp db optimize
+wp package install trepmal/wp-revisions-cli
+wp revisions clean --hard
+wp db optimize
 ```
 
 2. Delete transients.
 
 ```
-lando wp transient delete --all
+wp transient delete --all
 ```
 
 3. Delete pending comments and pingbacks.
@@ -162,7 +98,7 @@ unset AWS_SECRET_ACCESS_KEY
 unset AWS_DEFAULT_REGION
 ```
 
-If you have setup and activated S3 Uploads, image files should load at this point. You may also want to sync all or part of S3 bucket to your Pantheon server for redundancy. 
+If you have setup and activated S3 Uploads, image files should load at this point. You may also want to sync all or part of S3 bucket to your server for redundancy. 
 
 For local development, S3 Uploads [suggests the following](https://github.com/humanmade/S3-Uploads#offline-development):
 
@@ -186,8 +122,8 @@ However this function would need to be run repeatedly for the images to be clear
 You may also want to double check that all posts have a featured image. The featured image features was introduced in version 2.9 (December 18th, 2009).  Install [Run Command's Assign Featured Image](https://github.com/runcommand/assign-featured-images) package and then preview & run as follows:
 
 ```
-lando wp --url=onwardstate.lndo.site assign-featured-images --dry-run --only-missing
-lando wp --url=onwardstate.lndo.site assign-featured-images --only-missing
+wp --url=onwardstate.com assign-featured-images --dry-run --only-missing
+wp --url=onwardstate.com assign-featured-images --only-missing
 ```
 
 6. Removing subscribers.
@@ -195,7 +131,7 @@ lando wp --url=onwardstate.lndo.site assign-featured-images --only-missing
 We can use WP CLI to lookup subscribers and delete subscribers without posts.
 
 ```
-wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT DISTINCT post_author FROM os08_posts ) AND ID NOT IN (4)" --url=onwardstate.lndo.site | tail -n +2 ) --url=onwardstate.lndo.site --reassign=1
+wp user delete $(wp db query "SELECT ID FROM os08_users WHERE ID NOT IN ( SELECT DISTINCT post_author FROM os08_posts ) AND ID NOT IN (4)" --url=onwardstate.com | tail -n +2 ) --url=onwardstate.com --reassign=1
 ```
 
 The `4` here is the admin ID, which can be obtained with somthing like `wp user list --role=administrator --field=ID`. Comma separate multiple administrator ID's to ignore.

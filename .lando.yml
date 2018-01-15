@@ -1,66 +1,7 @@
 name: railyard
-recipe: pantheon
+recipe: wordpress
 config:
-  disableAutoComposerInstall: true
-  env: dev
-  framework: wordpress
+  php: 'hhvm'
   webroot: web
+  database: mariadb
   xdebug: true
-services:
-  appserver:
-    build:
-      - |
-        if [ -n "$GITHUB_TOKEN" ] ; then
-          cd $LANDO_MOUNT && composer config --global --auth --unset github-oauth.github.com && composer config --global github-oauth.github.com $GITHUB_TOKEN
-        fi
-        if [ -n "$TERMINUS_TOKEN" ] ; then
-          cd $LANDO_MOUNT && terminus auth:login --machine-token=$TERMINUS_TOKEN
-        fi
-        if [ -n "$PACKAGIST_TOKEN" ] && [ -n "$PACKAGIST_USER" ] ; then
-          cd $LANDO_MOUNT && composer config --global --auth http-basic.repo.packagist.com $PACKAGIST_USER $PACKAGIST_TOKEN
-        fi
-        mkdir -p ~/.terminus/plugins
-        composer config --global process-timeout 2000
-        if [ ! -d ~/.terminus/plugins/terminus-build-tools-plugin ] ; then
-          composer create-project -d ~/.terminus/plugins pantheon-systems/terminus-build-tools-plugin:2.0.0-alpha4
-        fi
-        if [ ! -d ~/.terminus/plugins/terminus-secrets-plugin ] ; then
-          composer create-project -d ~/.terminus/plugins pantheon-systems/terminus-secrets-plugin:~1
-        fi
-        cd $LANDO_MOUNT && composer build-assets-dev
-        if [ -n "$INSTALL_WP_REVISIONS_CLI" ] ; then
-          cd $LANDO_APP && wp package install trepmal/wp-revisions-cli
-        fi
-        if [ -n "$INSTALL_WP_DICTATOR" ] ; then
-          cd $LANDO_APP && wp package install danielbachhuber/dictator
-        fi
-        if [ -n "$INSTALL_WP_CLI_STAT_COMMAND" ] ; then
-          cd $LANDO_APP && wp package install danielbachhuber/wp-cli-stat-command
-        fi
-        if [ -n "$INSTALL_WP_CLI_UPDATE_VERIFY" ] ; then
-          cd $LANDO_APP && wp package install danielbachhuber/update-verify
-        fi
-        if [ -n "$INSTALL_WP_CLI_LOGIN_COMMAND" ] ; then
-          cd $LANDO_APP && wp package install aaemnnosttv/wp-cli-login-command
-        fi
-  database:
-    portforward: 3307
-  node:
-    type: node:8
-    command:
-      - "cd web/wp-content/mu-plugins/gutenberg/"
-      - "npm install"
-proxy:
-  edge:
-    - railyard.lndo.site
-tooling:
-  sniff:
-    service: appserver
-    cmd:
-      - composer
-      - code-sniff
-  test:
-    service: appserver
-    cmd:
-      - composer
-      - unit-test
