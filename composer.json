@@ -99,6 +99,7 @@
     "wikimedia/composer-merge-plugin": "^1.4",
     "wordpress/gutenberg": "^1.9.1",
     "wp-premium/gravityforms": "^2.2.5",
+    "wpackagist-plugin/broadstreet": "dev-master",
     "wpackagist-plugin/simple-local-avatars": "dev-master",
     "wpackagist-plugin/site-secrets": "dev-master",
     "wpackagist-plugin/unipress-api": "dev-master",

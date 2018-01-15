@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "482ed4dff27b64fd2928011653c70242",
+    "content-hash": "6fe44faf334afdea8f220a7f714a2a0d",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -282,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "8405e7e79aa7ae772759cb820c2ed7ef6ced18c4"
+                "reference": "79e504d660704b32e5b111b35105a58a42f787ba"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8405e7e79aa7ae772759cb820c2ed7ef6ced18c4",
-                "reference": "8405e7e79aa7ae772759cb820c2ed7ef6ced18c4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/79e504d660704b32e5b111b35105a58a42f787ba",
+                "reference": "79e504d660704b32e5b111b35105a58a42f787ba",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-15T10:02:29+00:00"
+            "time": "2018-01-15T22:47:48+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -596,6 +596,27 @@
                 "shasum": null
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/broadstreet",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/broadstreet/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/broadstreet.zip?timestamp=1508374527",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/broadstreet/",
+            "time": "2017-10-19T01:55:27+00:00"
         },
         {
             "name": "wpackagist-plugin/simple-local-avatars",
@@ -1225,6 +1246,7 @@
         "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
+        "wpackagist-plugin/broadstreet": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/unipress-api": 20,
