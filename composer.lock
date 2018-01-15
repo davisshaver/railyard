@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "6fe44faf334afdea8f220a7f714a2a0d",
+    "content-hash": "789901468d01d627abd24be44b974475",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -596,27 +596,6 @@
                 "shasum": null
             },
             "type": "wordpress-plugin"
-        },
-        {
-            "name": "wpackagist-plugin/broadstreet",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/broadstreet/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/broadstreet.zip?timestamp=1508374527",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/broadstreet/",
-            "time": "2017-10-19T01:55:27+00:00"
         },
         {
             "name": "wpackagist-plugin/simple-local-avatars",
@@ -1246,7 +1225,6 @@
         "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "wpackagist-plugin/broadstreet": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/unipress-api": 20,
