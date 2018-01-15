@@ -1,5 +1,6 @@
 {
   "name": "davisshaver/railyard",
+  "version": "1.0.0",
   "description": "Starter kit for a Philly Publishing site.",
   "type": "project",
   "keywords": [

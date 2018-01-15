@@ -35,7 +35,6 @@ public/wp
 # Using Deploybot, you may want to add these to .deployignore.
 
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
-
 # Enviroment
 public/.env
 
