@@ -37,7 +37,7 @@ public/wp
 # :::::::::::::::::::::: cut ::::::::::::::::::::::
 
 # Enviroment
-.env
+public/.env
 
 # Main app node & built packages
 node_modules
