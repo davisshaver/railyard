@@ -38,11 +38,6 @@ public/wp-content/themes/*
 !public/wp-content/themes/.gitkeep
 !public/wp-content/config/
 public/wp
-!public/private/
-public/private/*
-!public/private/scripts/
-public/private/scripts/quicksilver
-!public/private/config/
 !.circleci
 
 # Items below the cut line should not be uploaded to the server.
