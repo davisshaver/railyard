@@ -122,7 +122,7 @@
     "wpackagist-plugin/wp-sweep": "dev-master"
   },
   "config": {
-    "vendor-dir": "vendor",
+    "vendor-dir": "public/vendor",
     "preferred-install": "dist",
     "optimize-autoloader": true,
     "sort-packages": true,

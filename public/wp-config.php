@@ -3,14 +3,16 @@
 /**
  * Set root path.
  */
-$rootPath = realpath( __DIR__ . '/..' );
+$rootPath = realpath( __DIR__ );
 
 /**
  * Include the Composer autoload
  */
-require_once( $rootPath . '/vendor/autoload.php' );
-$dotenv = new Dotenv\Dotenv( $rootPath );
-$dotenv->load();
+if ( file_exists( $rootPath . '/vendor/autoload.php' ) ) {
+	require_once( $rootPath . '/vendor/autoload.php' );
+	$dotenv = new Dotenv\Dotenv( $rootPath );
+	$dotenv->load();	
+}
 
 /*
  * Don't show deprecations.

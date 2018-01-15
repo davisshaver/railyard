@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "d2da9437633c8a01d2c16d2caaf1b8c1c274134f"
+                "reference": "7c6c8b57da036a468f6d731559f90f9d90044c68"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/d2da9437633c8a01d2c16d2caaf1b8c1c274134f",
-                "reference": "d2da9437633c8a01d2c16d2caaf1b8c1c274134f",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/7c6c8b57da036a468f6d731559f90f9d90044c68",
+                "reference": "7c6c8b57da036a468f6d731559f90f9d90044c68",
                 "shasum": ""
             },
             "require-dev": {
@@ -199,7 +199,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-15T12:16:52+00:00"
+            "time": "2018-01-15T14:25:35+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
