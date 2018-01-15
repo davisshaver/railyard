@@ -8,7 +8,10 @@ $rootPath = realpath( __DIR__ );
 /**
  * Include the Composer autoload
  */
-if ( file_exists( $rootPath . '/vendor/autoload.php' ) ) {
+if (
+	file_exists( $rootPath . '/vendor/autoload.php' ) &&
+	file_exists( $rootPath . '/.env' )
+) {
 	require_once( $rootPath . '/vendor/autoload.php' );
 	$dotenv = new Dotenv\Dotenv( $rootPath );
 	$dotenv->load();	
