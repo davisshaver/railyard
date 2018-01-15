@@ -177,7 +177,7 @@
       "@cleanup"
     ],
     "code-sniff": [
-      "./vendor/bin/phpcs ./web/wp-content/plugins/custom/"
+      "echo true"
     ],
     "scrub-db": [
       "wp package install trepmal/wp-revisions-cli",

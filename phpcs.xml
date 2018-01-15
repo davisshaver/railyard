@@ -2,8 +2,7 @@
 <ruleset name="Railyard">
 	<description>A custom set of rules to check the PHP files in this project</description>
 
-	<file>web/wp-content/mu-plugins/custom</file>
-	<file>web/wp-content/plugins/custom</file>
+	<file>public/wp-content/mu-plugins/custom</file>
 	<exclude-pattern>vendor/*</exclude-pattern>
 
 	<!-- Only check the PHP. CSS/PHP files are checked separately. -->
