@@ -98,9 +98,10 @@
     "vlucas/phpdotenv": "^2.4",
     "wikimedia/composer-merge-plugin": "^1.4",
     "wordpress/gutenberg": "^1.9.1",
-    "wpackagist-plugin/unipress-api": "dev-master",
-    "wpackagist-plugin/simple-local-avatars": "dev-master",
     "wp-premium/gravityforms": "^2.2.5",
+    "wpackagist-plugin/simple-local-avatars": "dev-master",
+    "wpackagist-plugin/site-secrets": "dev-master",
+    "wpackagist-plugin/unipress-api": "dev-master",
     "wp-premium/gravityformsstripe": "^2.3"
   },
   "require-dev": {

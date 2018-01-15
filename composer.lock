@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "3f84632084f9e34bf5f6c6eea4d88a0f",
+    "content-hash": "482ed4dff27b64fd2928011653c70242",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "7c6c8b57da036a468f6d731559f90f9d90044c68"
+                "reference": "1cab9c76086d95d902e9371e56e0f7f84e2e81d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/7c6c8b57da036a468f6d731559f90f9d90044c68",
-                "reference": "7c6c8b57da036a468f6d731559f90f9d90044c68",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/1cab9c76086d95d902e9371e56e0f7f84e2e81d8",
+                "reference": "1cab9c76086d95d902e9371e56e0f7f84e2e81d8",
                 "shasum": ""
             },
             "require-dev": {
@@ -199,7 +199,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-15T14:25:35+00:00"
+            "time": "2018-01-15T18:33:35+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -617,6 +617,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/simple-local-avatars/",
             "time": "2013-06-03T02:21:21+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/site-secrets",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/site-secrets/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/site-secrets.zip?timestamp=1483037805",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/site-secrets/",
+            "time": "2016-12-29T18:56:45+00:00"
         },
         {
             "name": "wpackagist-plugin/unipress-api",
@@ -1204,8 +1225,9 @@
         "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "wpackagist-plugin/unipress-api": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
+        "wpackagist-plugin/site-secrets": 20,
+        "wpackagist-plugin/unipress-api": 20,
         "roave/security-advisories": 20,
         "wp-coding-standards/wpcs": 20,
         "wpackagist-plugin/debug-bar-actions-and-filters-addon": 20,
