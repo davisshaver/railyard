@@ -5,6 +5,9 @@
 # Enviroment
 .env
 
+# S3 Credentials
+.s3-credentials.json
+
 # Notes
 notes.md
 
