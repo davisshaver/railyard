@@ -4,7 +4,6 @@
   "description": "Starter kit for a Philly Publishing site.",
   "type": "project",
   "keywords": [
-    "circleci",
     "github-api",
     "wordpress",
     "wordpress-development"
