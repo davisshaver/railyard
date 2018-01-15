@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "411c5159e78683c3f2b170fdd1bb89549cf19ff6"
+                "reference": "d2da9437633c8a01d2c16d2caaf1b8c1c274134f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/411c5159e78683c3f2b170fdd1bb89549cf19ff6",
-                "reference": "411c5159e78683c3f2b170fdd1bb89549cf19ff6",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/d2da9437633c8a01d2c16d2caaf1b8c1c274134f",
+                "reference": "d2da9437633c8a01d2c16d2caaf1b8c1c274134f",
                 "shasum": ""
             },
             "require-dev": {
@@ -199,7 +199,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-14T22:23:30+00:00"
+            "time": "2018-01-15T12:16:52+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -282,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "94a6209467500b3d83dbc20790082acfb06cf6a2"
+                "reference": "8405e7e79aa7ae772759cb820c2ed7ef6ced18c4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/94a6209467500b3d83dbc20790082acfb06cf6a2",
-                "reference": "94a6209467500b3d83dbc20790082acfb06cf6a2",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/8405e7e79aa7ae772759cb820c2ed7ef6ced18c4",
+                "reference": "8405e7e79aa7ae772759cb820c2ed7ef6ced18c4",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-14T16:47:40+00:00"
+            "time": "2018-01-15T10:02:29+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
