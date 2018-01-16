@@ -61,6 +61,7 @@ define( 'DB_NAME', getenv( 'DB_NAME' ) );
 define( 'DB_USER', getenv( 'DB_USER' ) );
 define( 'DB_PASSWORD', getenv( 'DB_PASSWORD' ) !== false ? getenv( 'DB_PASSWORD' ) : '' );
 define( 'DB_HOST', getenv( 'DB_HOST' ) !== false ? getenv( 'DB_HOST' ) : 'localhost' );
+define( 'DB_PREFIX', getenv( 'DB_PREFIX' ) !== false ? getenv( 'DB_PREFIX' ) : 'utf8' );
 
 /**
  * Set debug modes
