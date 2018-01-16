@@ -158,11 +158,11 @@
     "wordpress-install-dir": "public/wp",
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": [
+        "alleyinteractive/wordpress-fieldmanager",
         "wordpress/gutenberg",
         "type:wordpress-muplugin"
       ],
       "public/wp-content/plugins/{$name}/": [
-        "alleyinteractive/wordpress-fieldmanager",
         "type:wordpress-plugin"
       ],
       "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],

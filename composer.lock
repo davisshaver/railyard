@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d678a06913c9350f2c769a24a5a4f224",
+    "content-hash": "4c68894319b5d9555aee652a2dcfb09f",
     "packages": [
         {
             "name": "alleyinteractive/fm-widgets",
@@ -12,19 +12,19 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/alleyinteractive/fm-widgets.git",
-                "reference": "5ee3866c0b775450c71859aeb068289d33be729c"
+                "reference": "296d5aef0585f3ff9bcf223e30867e069c13e2ca"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/alleyinteractive/fm-widgets/zipball/5ee3866c0b775450c71859aeb068289d33be729c",
-                "reference": "5ee3866c0b775450c71859aeb068289d33be729c",
+                "url": "https://api.github.com/repos/alleyinteractive/fm-widgets/zipball/296d5aef0585f3ff9bcf223e30867e069c13e2ca",
+                "reference": "296d5aef0585f3ff9bcf223e30867e069c13e2ca",
                 "shasum": ""
             },
             "require-dev": {
                 "squizlabs/php_codesniffer": "2.3.4",
                 "wp-coding-standards/wpcs": "0.8.0"
             },
-            "type": "library",
+            "type": "wordpress-plugin",
             "scripts": {
                 "post-install-cmd": [
                     "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
@@ -43,7 +43,7 @@
                 "source": "https://github.com/alleyinteractive/fm-widgets/tree/master",
                 "issues": "https://github.com/alleyinteractive/fm-widgets/issues"
             },
-            "time": "2016-07-26T16:44:00+00:00"
+            "time": "2018-01-16T14:38:06+00:00"
         },
         {
             "name": "alleyinteractive/wordpress-fieldmanager",
@@ -255,12 +255,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "b4d15f9b70e15d1b3e06218456974da3f1125e7a"
+                "reference": "bde6b306bd9a011307ce07ea532c4a8634f5e69f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/b4d15f9b70e15d1b3e06218456974da3f1125e7a",
-                "reference": "b4d15f9b70e15d1b3e06218456974da3f1125e7a",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/bde6b306bd9a011307ce07ea532c4a8634f5e69f",
+                "reference": "bde6b306bd9a011307ce07ea532c4a8634f5e69f",
                 "shasum": ""
             },
             "require-dev": {
@@ -284,7 +284,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-16T10:48:45+00:00"
+            "time": "2018-01-16T15:11:52+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -367,12 +367,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e81e72776c38f2d1307b2116a10877aa0704001b"
+                "reference": "e8ee78030af80b4fb1ccf347e386d1f20563a82f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e81e72776c38f2d1307b2116a10877aa0704001b",
-                "reference": "e81e72776c38f2d1307b2116a10877aa0704001b",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e8ee78030af80b4fb1ccf347e386d1f20563a82f",
+                "reference": "e8ee78030af80b4fb1ccf347e386d1f20563a82f",
                 "shasum": ""
             },
             "require": {
@@ -399,7 +399,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-16T09:03:03+00:00"
+            "time": "2018-01-16T17:30:30+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
