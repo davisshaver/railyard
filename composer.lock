@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "789901468d01d627abd24be44b974475",
+    "content-hash": "bea89fd1a1d13465041c3b1d249c3e5e",
     "packages": [
         {
             "name": "automattic/syndication",
@@ -170,12 +170,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "1cab9c76086d95d902e9371e56e0f7f84e2e81d8"
+                "reference": "b4d15f9b70e15d1b3e06218456974da3f1125e7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/1cab9c76086d95d902e9371e56e0f7f84e2e81d8",
-                "reference": "1cab9c76086d95d902e9371e56e0f7f84e2e81d8",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/b4d15f9b70e15d1b3e06218456974da3f1125e7a",
+                "reference": "b4d15f9b70e15d1b3e06218456974da3f1125e7a",
                 "shasum": ""
             },
             "require-dev": {
@@ -199,7 +199,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-15T18:33:35+00:00"
+            "time": "2018-01-16T10:48:45+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -282,12 +282,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "79e504d660704b32e5b111b35105a58a42f787ba"
+                "reference": "e81e72776c38f2d1307b2116a10877aa0704001b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/79e504d660704b32e5b111b35105a58a42f787ba",
-                "reference": "79e504d660704b32e5b111b35105a58a42f787ba",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e81e72776c38f2d1307b2116a10877aa0704001b",
+                "reference": "e81e72776c38f2d1307b2116a10877aa0704001b",
                 "shasum": ""
             },
             "require": {
@@ -314,7 +314,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-15T22:47:48+00:00"
+            "time": "2018-01-16T09:03:03+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -659,6 +659,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/unipress-api/",
             "time": "2018-01-03T17:53:45+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wps-hide-login",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wps-hide-login/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.zip?timestamp=1508095245",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wps-hide-login/",
+            "time": "2017-10-15T20:20:45+00:00"
         }
     ],
     "packages-dev": [
@@ -1225,6 +1246,7 @@
         "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
+        "wpackagist-plugin/wps-hide-login": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/unipress-api": 20,
