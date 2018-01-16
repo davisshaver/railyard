@@ -4,8 +4,93 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "bea89fd1a1d13465041c3b1d249c3e5e",
+    "content-hash": "d678a06913c9350f2c769a24a5a4f224",
     "packages": [
+        {
+            "name": "alleyinteractive/fm-widgets",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/fm-widgets.git",
+                "reference": "5ee3866c0b775450c71859aeb068289d33be729c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/fm-widgets/zipball/5ee3866c0b775450c71859aeb068289d33be729c",
+                "reference": "5ee3866c0b775450c71859aeb068289d33be729c",
+                "shasum": ""
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.3.4",
+                "wp-coding-standards/wpcs": "0.8.0"
+            },
+            "type": "library",
+            "scripts": {
+                "post-install-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ],
+                "post-update-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Matthew Boynes",
+                    "email": "noreply@alleyinteractive.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/alleyinteractive/fm-widgets/tree/master",
+                "issues": "https://github.com/alleyinteractive/fm-widgets/issues"
+            },
+            "time": "2016-07-26T16:44:00+00:00"
+        },
+        {
+            "name": "alleyinteractive/wordpress-fieldmanager",
+            "version": "1.2.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/alleyinteractive/wordpress-fieldmanager.git",
+                "reference": "d73238e44de584973ff97a89d3241d9f78d2aafb"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/alleyinteractive/wordpress-fieldmanager/zipball/d73238e44de584973ff97a89d3241d9f78d2aafb",
+                "reference": "d73238e44de584973ff97a89d3241d9f78d2aafb",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "2.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "post-install-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ],
+                "post-update-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Alley Interactive",
+                    "email": "noreply@alleyinteractive.com"
+                }
+            ],
+            "keywords": [
+                "plugin",
+                "wordpress"
+            ],
+            "support": {
+                "source": "https://github.com/alleyinteractive/wordpress-fieldmanager/tree/1.2.1",
+                "issues": "https://github.com/alleyinteractive/wordpress-fieldmanager/issues"
+            },
+            "time": "2017-12-07T16:42:29+00:00"
+        },
         {
             "name": "automattic/syndication",
             "version": "2.1.x-dev",
@@ -662,15 +747,15 @@
         },
         {
             "name": "wpackagist-plugin/wps-hide-login",
-            "version": "dev-trunk",
+            "version": "1.2.1",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/wps-hide-login/",
-                "reference": "trunk"
+                "reference": "tags/1.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.zip?timestamp=1508095245",
+                "url": "https://downloads.wordpress.org/plugin/wps-hide-login.1.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -678,8 +763,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wps-hide-login/",
-            "time": "2017-10-15T20:20:45+00:00"
+            "homepage": "https://wordpress.org/plugins/wps-hide-login/"
         }
     ],
     "packages-dev": [
@@ -1243,10 +1327,10 @@
     "aliases": [],
     "minimum-stability": "dev",
     "stability-flags": {
+        "alleyinteractive/fm-widgets": 20,
         "davisshaver/terminal": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "wpackagist-plugin/wps-hide-login": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/unipress-api": 20,
