@@ -10,6 +10,7 @@
 
 $railyard_mu_plugins = array(
 	'custom/railyard/railyard.php',
+	'wordpress-fieldmanager/fieldmanager.php',
 	'gutenberg/gutenberg.php',
 	'kinsta-mu-plugins/kinsta-mu-plugins.php'
 );
