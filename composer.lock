@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "4c68894319b5d9555aee652a2dcfb09f",
+    "content-hash": "41485bc7c78934a419bb2aab89796353",
     "packages": [
         {
             "name": "alleyinteractive/fm-widgets",
@@ -90,6 +90,48 @@
                 "issues": "https://github.com/alleyinteractive/wordpress-fieldmanager/issues"
             },
             "time": "2017-12-07T16:42:29+00:00"
+        },
+        {
+            "name": "archon810/smartdomdocument",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://bitbucket.org/archon810/smartdomdocument.git",
+                "reference": "fd4c92a8e1fac4ce9a89b54ad1a6beafbda27fd9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://bitbucket.org/archon810/smartdomdocument/get/fd4c92a8e1fac4ce9a89b54ad1a6beafbda27fd9.zip",
+                "reference": "fd4c92a8e1fac4ce9a89b54ad1a6beafbda27fd9",
+                "shasum": ""
+            },
+            "require-dev": {
+                "phpunit/phpunit": "^4.8"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "archon810\\": "src"
+                }
+            },
+            "autoload-dev": {
+                "psr-4": {
+                    "archon810\\": "test"
+                }
+            },
+            "authors": [
+                {
+                    "name": "Artem Russakovskii",
+                    "email": "artem@androidpolice.com"
+                }
+            ],
+            "description": "Overcomes a few common annoyances with the DOMDocument class",
+            "homepage": "https://bitbucket.org/archon810/smartdomdocument",
+            "support": {
+                "source": "https://bitbucket.org/archon810/smartdomdocument/src/fd4c92a8e1fac4ce9a89b54ad1a6beafbda27fd9/?at=master",
+                "issues": "https://bitbucket.org/archon810/smartdomdocument/issues"
+            },
+            "time": "2015-11-03T16:23:49+00:00"
         },
         {
             "name": "automattic/syndication",
@@ -255,12 +297,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "bde6b306bd9a011307ce07ea532c4a8634f5e69f"
+                "reference": "da590a40948e4d009033e9312daebb355cf8af48"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/bde6b306bd9a011307ce07ea532c4a8634f5e69f",
-                "reference": "bde6b306bd9a011307ce07ea532c4a8634f5e69f",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/da590a40948e4d009033e9312daebb355cf8af48",
+                "reference": "da590a40948e4d009033e9312daebb355cf8af48",
                 "shasum": ""
             },
             "require-dev": {
@@ -284,7 +326,49 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-16T15:11:52+00:00"
+            "time": "2018-01-16T21:55:33+00:00"
+        },
+        {
+            "name": "florianbrinkmann/lazy-loading-responsive-images",
+            "version": "v3.2.6",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/florianbrinkmann/lazy-loading-responsive-images.git",
+                "reference": "0364ea267a8afb9811c8a811ad8992708ddb9902"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/florianbrinkmann/lazy-loading-responsive-images/zipball/0364ea267a8afb9811c8a811ad8992708ddb9902",
+                "reference": "0364ea267a8afb9811c8a811ad8992708ddb9902",
+                "shasum": ""
+            },
+            "require": {
+                "archon810/smartdomdocument": "dev-master"
+            },
+            "require-dev": {
+                "wpreadme2markdown/wp2md": "*"
+            },
+            "type": "wordpress-plugin",
+            "autoload": {
+                "psr-4": {
+                    "FlorianBrinkmann\\LazyLoadResponsiveImages\\": "src/"
+                }
+            },
+            "license": [
+                "GPL-2.0"
+            ],
+            "authors": [
+                {
+                    "name": "Florian Brinkmann",
+                    "email": "kontakt@florianbrinkmann.com"
+                }
+            ],
+            "description": "Lazy loading plugin for WordPress \u0000 uses lazysizes.js.",
+            "support": {
+                "source": "https://github.com/florianbrinkmann/lazy-loading-responsive-images/tree/v3.2.6",
+                "issues": "https://github.com/florianbrinkmann/lazy-loading-responsive-images/issues"
+            },
+            "time": "2017-11-30T08:08:06+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -367,12 +451,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "e8ee78030af80b4fb1ccf347e386d1f20563a82f"
+                "reference": "fad83b11b81b09c628bc66c8e70ea66ab77eb8e8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/e8ee78030af80b4fb1ccf347e386d1f20563a82f",
-                "reference": "e8ee78030af80b4fb1ccf347e386d1f20563a82f",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fad83b11b81b09c628bc66c8e70ea66ab77eb8e8",
+                "reference": "fad83b11b81b09c628bc66c8e70ea66ab77eb8e8",
                 "shasum": ""
             },
             "require": {
@@ -399,7 +483,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-16T17:30:30+00:00"
+            "time": "2018-01-16T20:45:20+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
