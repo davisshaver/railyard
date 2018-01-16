@@ -20,3 +20,7 @@ foreach ( $railyard_mu_plugins as $railyard_mu_plugin ) {
 		require_once dirname( __FILE__ ) . '/' . $railyard_mu_plugin;
 	}
 }
+
+if ( function_exists( 'fieldmanager_set_baseurl' ) ) {
+	fieldmanager_set_baseurl( site_url( '/wp/wp-content/mu-plugins/fieldmanager/' ) );
+}
