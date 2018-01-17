@@ -199,11 +199,6 @@
     ],
     "code-sniff": [
       "echo true"
-    ],
-    "scrub-db": [
-      "wp package install trepmal/wp-revisions-cli",
-      "wp revisions clean --hard",
-      "wp db optimize"
     ]
   }
 }
