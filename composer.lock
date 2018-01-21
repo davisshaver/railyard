@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "64b9205acf88faa1868be53edea44b60",
+    "content-hash": "72ae3a98820bca4da61a40a2131eda92",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -331,6 +331,50 @@
             "time": "2017-12-29T09:13:20+00:00"
         },
         {
+            "name": "davisshaver/speed-bumps",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/davisshaver/speed-bumps.git",
+                "reference": "85423134747868316f3b1cfc587be1a09ff9bb0f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/davisshaver/speed-bumps/zipball/85423134747868316f3b1cfc587be1a09ff9bb0f",
+                "reference": "85423134747868316f3b1cfc587be1a09ff9bb0f",
+                "shasum": ""
+            },
+            "require": {
+                "querypath/querypath": ">=3.0.0"
+            },
+            "require-dev": {
+                "wp-coding-standards/wpcs": "dev-develop"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "post-install-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ],
+                "post-update-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "Fusion Engineering",
+                    "email": "tech@fusion.net"
+                },
+                {
+                    "name": "Davis Shaver",
+                    "email": "davisshaver@gmail.com"
+                }
+            ],
+            "support": {
+                "source": "https://github.com/davisshaver/speed-bumps/tree/master"
+            },
+            "time": "2018-01-21T12:22:14+00:00"
+        },
+        {
             "name": "davisshaver/terminal",
             "version": "dev-master",
             "source": {
@@ -408,47 +452,6 @@
                 "issues": "https://github.com/florianbrinkmann/lazy-loading-responsive-images/issues"
             },
             "time": "2017-11-30T08:08:06+00:00"
-        },
-        {
-            "name": "fusioneng/speed-bumps",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/fusioneng/speed-bumps.git",
-                "reference": "834f7494d86026ac0844c7af0f0df3a5b79d229f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/fusioneng/speed-bumps/zipball/834f7494d86026ac0844c7af0f0df3a5b79d229f",
-                "reference": "834f7494d86026ac0844c7af0f0df3a5b79d229f",
-                "shasum": ""
-            },
-            "require": {
-                "querypath/querypath": ">=3.0.0"
-            },
-            "require-dev": {
-                "wp-coding-standards/wpcs": "dev-develop"
-            },
-            "type": "library",
-            "scripts": {
-                "post-install-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
-                ],
-                "post-update-cmd": [
-                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
-                ]
-            },
-            "authors": [
-                {
-                    "name": "Fusion Engineering",
-                    "email": "tech@fusion.net"
-                }
-            ],
-            "support": {
-                "source": "https://github.com/fusioneng/speed-bumps/tree/v0.2.0",
-                "issues": "https://github.com/fusioneng/speed-bumps/issues"
-            },
-            "time": "2016-12-17T00:00:33+00:00"
         },
         {
             "name": "humanmade/s3-uploads",
@@ -1644,7 +1647,7 @@
         "alleyinteractive/ad-layers": 20,
         "alleyinteractive/fm-widgets": 20,
         "davisshaver/terminal": 20,
-        "fusioneng/speed-bumps": 20,
+        "davisshaver/speed-bumps": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
         "wpackagist-plugin/infinite-scroll-from-jetpack": 20,
