@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "72ae3a98820bca4da61a40a2131eda92",
+    "content-hash": "8d100d84d6f3b1e73a67ebfb5141d82a",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -380,12 +380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "e1a99b6b52decec93d8cd92a67ae19fa1fa987ed"
+                "reference": "8465a69582909e23bea0bbd2d5e9d5f0d4ffd0db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/e1a99b6b52decec93d8cd92a67ae19fa1fa987ed",
-                "reference": "e1a99b6b52decec93d8cd92a67ae19fa1fa987ed",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/8465a69582909e23bea0bbd2d5e9d5f0d4ffd0db",
+                "reference": "8465a69582909e23bea0bbd2d5e9d5f0d4ffd0db",
                 "shasum": ""
             },
             "require-dev": {
@@ -409,7 +409,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-21T21:19:41+00:00"
+            "time": "2018-01-21T22:10:19+00:00"
         },
         {
             "name": "florianbrinkmann/lazy-loading-responsive-images",
@@ -955,6 +955,27 @@
                 "shasum": null
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/cloudflare",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/cloudflare/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/cloudflare.zip?timestamp=1513091228",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/cloudflare/",
+            "time": "2017-12-12T15:07:08+00:00"
         },
         {
             "name": "wpackagist-plugin/infinite-scroll-from-jetpack",
@@ -1655,6 +1676,7 @@
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/unipress-api": 20,
         "wpackagist-plugin/wordpress-importer": 20,
+        "wpackagist-plugin/cloudflare": 20,
         "roave/security-advisories": 20,
         "wp-coding-standards/wpcs": 20,
         "wpackagist-plugin/debug-bar-actions-and-filters-addon": 20,
