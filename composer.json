@@ -134,6 +134,7 @@
     "wpackagist-plugin/site-secrets": "dev-master",
     "wpackagist-plugin/unipress-api": "dev-master",
     "wpackagist-plugin/wordpress-importer": "dev-master",
+    "wpackagist-plugin/cloudflare": "dev-master",
     "wpackagist-plugin/wps-hide-login": "^1.2.1"
   },
   "require-dev": {
