@@ -380,12 +380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "4cb3fe94f35b075b71552aeda511ac0fe71c5a27"
+                "reference": "e1a99b6b52decec93d8cd92a67ae19fa1fa987ed"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/4cb3fe94f35b075b71552aeda511ac0fe71c5a27",
-                "reference": "4cb3fe94f35b075b71552aeda511ac0fe71c5a27",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/e1a99b6b52decec93d8cd92a67ae19fa1fa987ed",
+                "reference": "e1a99b6b52decec93d8cd92a67ae19fa1fa987ed",
                 "shasum": ""
             },
             "require-dev": {
@@ -409,7 +409,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-20T23:56:35+00:00"
+            "time": "2018-01-21T21:19:41+00:00"
         },
         {
             "name": "florianbrinkmann/lazy-loading-responsive-images",
