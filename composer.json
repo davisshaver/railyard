@@ -25,6 +25,10 @@
     },
     {
       "type": "vcs",
+      "url": "git@github.com:fusioneng/speed-bumps.git"
+    },
+    {
+      "type": "vcs",
       "url": "https://github.com/Automattic/syndication"
     },
     {
@@ -115,6 +119,7 @@
     "composer/installers": "^1.3.0",
     "davisshaver/terminal": "dev-master",
     "florianbrinkmann/lazy-loading-responsive-images": "^3.2.6",
+    "fusioneng/speed-bumps": "dev-master",
     "humanmade/s3-uploads": "^2.0@beta",
     "johnpbloch/wordpress": "dev-master",
     "oomphinc/composer-installers-extender": "^1.1",
