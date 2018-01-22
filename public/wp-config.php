@@ -110,6 +110,8 @@ if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
 	define( 'S3_UPLOADS_REGION', getenv( 'S3_UPLOADS_REGION' ) );
 }
 
+define( 'S3_UPLOADS_HTTP_CACHE_CONTROL', 30 * 24 * 60 * 60 );
+
 define( 'KINSTAMU_WHITELABEL', true );
 
 /* Inserted for Local by Flywheel. See: http://codex.wordpress.org/Administration_Over_SSL#Using_a_Reverse_Proxy */
