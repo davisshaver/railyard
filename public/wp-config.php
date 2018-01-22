@@ -110,6 +110,13 @@ if ( getenv( 'S3_UPLOADS_REGION' ) !== false ) {
 	define( 'S3_UPLOADS_REGION', getenv( 'S3_UPLOADS_REGION' ) );
 }
 
+if ( getenv( 'AWS_S3_BUCKET_UPLOADS_URL' ) !== false ) {
+	define( 'S3_UPLOADS_BUCKET_URL', getenv( 'AWS_S3_BUCKET_UPLOADS_URL' ) );
+}
+if ( getenv( 'S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL' ) !== false ) {
+	define( 'S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL', getenv( 'S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL' ) );
+}
+
 define( 'S3_UPLOADS_HTTP_CACHE_CONTROL', 30 * 24 * 60 * 60 );
 
 define( 'KINSTAMU_WHITELABEL', true );
