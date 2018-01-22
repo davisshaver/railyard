@@ -118,6 +118,7 @@ if ( getenv( 'S3_UPLOADS_DISABLE_REPLACE_UPLOAD_URL' ) !== false ) {
 }
 
 define( 'S3_UPLOADS_HTTP_CACHE_CONTROL', 30 * 24 * 60 * 60 );
+define( 'S3_UPLOADS_HTTP_EXPIRES', gmdate( 'D, d M Y H:i:s', time() + (10 * 365 * 24 * 60 * 60) ) .' GMT' );
 
 define( 'KINSTAMU_WHITELABEL', true );
 
