@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "8d100d84d6f3b1e73a67ebfb5141d82a",
+    "content-hash": "2c045962ba1aa945ffee8a0302ca8e90",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -380,12 +380,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "ca0bb4730a383dee83a192ba2df435995efa74cc"
+                "reference": "1f50e8eda0c75dd5f6985f3423acd769aa03e0d4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/ca0bb4730a383dee83a192ba2df435995efa74cc",
-                "reference": "ca0bb4730a383dee83a192ba2df435995efa74cc",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/1f50e8eda0c75dd5f6985f3423acd769aa03e0d4",
+                "reference": "1f50e8eda0c75dd5f6985f3423acd769aa03e0d4",
                 "shasum": ""
             },
             "require-dev": {
@@ -409,7 +409,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-23T11:04:37+00:00"
+            "time": "2018-01-23T18:42:48+00:00"
         },
         {
             "name": "florianbrinkmann/lazy-loading-responsive-images",
@@ -534,12 +534,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "ae76ede993e43a96fcf9ca89e5097b4388d44d4a"
+                "reference": "9e5a5aaf8c581c365dcf18dd3fa70aa1838a41d8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/ae76ede993e43a96fcf9ca89e5097b4388d44d4a",
-                "reference": "ae76ede993e43a96fcf9ca89e5097b4388d44d4a",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9e5a5aaf8c581c365dcf18dd3fa70aa1838a41d8",
+                "reference": "9e5a5aaf8c581c365dcf18dd3fa70aa1838a41d8",
                 "shasum": ""
             },
             "require": {
@@ -566,7 +566,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-23T03:45:10+00:00"
+            "time": "2018-01-23T21:15:14+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1039,6 +1039,27 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/site-secrets/",
             "time": "2016-12-29T18:56:45+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/temporary-login-without-password",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/temporary-login-without-password/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/temporary-login-without-password.zip?timestamp=1516352053",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/temporary-login-without-password/",
+            "time": "2018-01-19T08:54:13+00:00"
         },
         {
             "name": "wpackagist-plugin/unipress-api",
@@ -1671,6 +1692,7 @@
         "davisshaver/speed-bumps": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
+        "wpackagist-plugin/temporary-login-without-password": 20,
         "wpackagist-plugin/infinite-scroll-from-jetpack": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,

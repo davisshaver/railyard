@@ -129,6 +129,7 @@
     "wordpress/gutenberg": "^1.9.1",
     "wp-premium/gravityforms": "^2.2.5",
     "wp-premium/gravityformsstripe": "^2.3",
+    "wpackagist-plugin/temporary-login-without-password": "dev-master",
     "wpackagist-plugin/infinite-scroll-from-jetpack": "dev-master",
     "wpackagist-plugin/simple-local-avatars": "dev-master",
     "wpackagist-plugin/site-secrets": "dev-master",
