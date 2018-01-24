@@ -115,7 +115,6 @@
     "alleyinteractive/ad-layers": "dev-master",
     "alleyinteractive/fm-widgets": "dev-master",
     "alleyinteractive/wordpress-fieldmanager": "^1.2.1",
-    "automattic/syndication": "^2.0.1",
     "composer/installers": "^1.3.0",
     "davisshaver/terminal": "dev-master",
     "florianbrinkmann/lazy-loading-responsive-images": "^3.2.6",
@@ -134,9 +133,7 @@
     "wpackagist-plugin/simple-local-avatars": "dev-master",
     "wpackagist-plugin/site-secrets": "dev-master",
     "wpackagist-plugin/unipress-api": "dev-master",
-    "wpackagist-plugin/wordpress-importer": "dev-master",
-    "wpackagist-plugin/cloudflare": "dev-master",
-    "wpackagist-plugin/wps-hide-login": "^1.2.1"
+    "wpackagist-plugin/wordpress-importer": "dev-master"
   },
   "require-dev": {
     "danielbachhuber/composer-lock-updater": "^0.2.1",
