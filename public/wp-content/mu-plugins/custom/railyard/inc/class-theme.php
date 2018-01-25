@@ -30,7 +30,7 @@ class Theme {
 		remove_action( 'welcome_panel', [ $this, 'wp_welcome_panel' ] );
 		add_action( 'init', [ $this, 'remove_gutenberg_menu' ] );
 		add_action( 'wp_head', function() {
-			echo '<meta name="twitter:dnt" content="on">';
+			echo '<style> #wp-admin-bar-classic-edit > a.ab-item::before { content: "\f464"; } </style>';
 		});
 	}
 
