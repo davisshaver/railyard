@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "d8402259c22103daeac50a6f329a8411",
+    "content-hash": "c5076bbdbc5afc5044427bd4e8444ac4",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -342,12 +342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "91047bd5c311fa32a38ef083d700f166f4398997"
+                "reference": "a76aed587b1d5d18fdda383ea3c62fcf0d4fac49"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/91047bd5c311fa32a38ef083d700f166f4398997",
-                "reference": "91047bd5c311fa32a38ef083d700f166f4398997",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/a76aed587b1d5d18fdda383ea3c62fcf0d4fac49",
+                "reference": "a76aed587b1d5d18fdda383ea3c62fcf0d4fac49",
                 "shasum": ""
             },
             "require-dev": {
@@ -371,7 +371,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-24T19:21:52+00:00"
+            "time": "2018-01-26T12:09:01+00:00"
         },
         {
             "name": "florianbrinkmann/lazy-loading-responsive-images",
@@ -496,12 +496,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "923e4c4114db2212bb8b07cf4d734011e7f8ff3c"
+                "reference": "fca6ba18ad9671cf56b46be2c8295a2c30720714"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/923e4c4114db2212bb8b07cf4d734011e7f8ff3c",
-                "reference": "923e4c4114db2212bb8b07cf4d734011e7f8ff3c",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fca6ba18ad9671cf56b46be2c8295a2c30720714",
+                "reference": "fca6ba18ad9671cf56b46be2c8295a2c30720714",
                 "shasum": ""
             },
             "require": {
@@ -528,7 +528,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-24T17:30:19+00:00"
+            "time": "2018-01-25T01:15:19+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -845,16 +845,16 @@
         },
         {
             "name": "wordpress/gutenberg",
-            "version": "v1.9.1",
+            "version": "v2.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress/gutenberg.git",
-                "reference": "369e94834769ec5ccf2ab7d5548c753fda1c2caf"
+                "reference": "cd2ce06256e9cb1f1e022ae0991b110eb5822d60"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/gutenberg/zipball/369e94834769ec5ccf2ab7d5548c753fda1c2caf",
-                "reference": "369e94834769ec5ccf2ab7d5548c753fda1c2caf",
+                "url": "https://api.github.com/repos/WordPress/gutenberg/zipball/cd2ce06256e9cb1f1e022ae0991b110eb5822d60",
+                "reference": "cd2ce06256e9cb1f1e022ae0991b110eb5822d60",
                 "shasum": ""
             },
             "require": {
@@ -867,8 +867,13 @@
                 "wp-coding-standards/wpcs": "^0.14.0"
             },
             "type": "wordpress-plugin",
+            "scripts": {
+                "lint": [
+                    "phpcs"
+                ]
+            },
             "license": [
-                "GPL-2.0+"
+                "GPL-2.0-or-later"
             ],
             "description": "Prototyping since 1440. Development hub for the editor focus in core.",
             "homepage": "https://wordpress.github.io/gutenberg/",
@@ -882,9 +887,9 @@
             ],
             "support": {
                 "issues": "https://github.com/WordPress/gutenberg/issues",
-                "source": "https://github.com/WordPress/gutenberg/tree/v1.9.1"
+                "source": "https://github.com/WordPress/gutenberg/tree/v2.1.0"
             },
-            "time": "2017-12-13T14:31:24+00:00"
+            "time": "2018-01-25T18:00:45+00:00"
         },
         {
             "name": "wp-premium/gravityforms",

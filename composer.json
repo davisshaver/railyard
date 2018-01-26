@@ -125,7 +125,7 @@
     "retlehs/kinsta-mu-plugins": "^2.0.2",
     "vlucas/phpdotenv": "^2.4",
     "wikimedia/composer-merge-plugin": "^1.4",
-    "wordpress/gutenberg": "^1.9.1",
+    "wordpress/gutenberg": "^2.1.0",
     "wp-premium/gravityforms": "^2.2.5",
     "wp-premium/gravityformsstripe": "^2.3",
     "wpackagist-plugin/customizer-browser-history": "dev-master",
