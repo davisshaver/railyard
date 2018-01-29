@@ -136,6 +136,7 @@
     "wpackagist-plugin/simple-local-avatars": "dev-master",
     "wpackagist-plugin/site-secrets": "dev-master",
     "wpackagist-plugin/unipress-api": "dev-master",
+    "wpackagist-plugin/classic-editor": "dev-master",
     "wpackagist-plugin/wordpress-importer": "dev-master"
   },
   "require-dev": {

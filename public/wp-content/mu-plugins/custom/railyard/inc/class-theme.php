@@ -93,16 +93,16 @@ class Theme {
 	 */
 	public function remove_wp_logo( $wp_admin_bar ) {
 		$wp_admin_bar->remove_node( 'wp-logo' );
-		if ( is_singular() && current_user_can( 'edit_post', get_the_id() ) ) {
-			$edit_post_link = get_edit_post_link( get_the_id() ) . '&classic-editor';
-			$wp_admin_bar->add_menu(
-				array(
-					'id'    => 'classic-edit',
-					'title' => __( 'Edit Post (Classic)', 'terminal' ),
-					'href'  => $edit_post_link,
-				)
-			);
-		}
+		// if ( is_singular() && current_user_can( 'edit_post', get_the_id() ) ) {
+		// 	$edit_post_link = get_edit_post_link( get_the_id() ) . '&classic-editor';
+		// 	$wp_admin_bar->add_menu(
+		// 		array(
+		// 			'id'    => 'classic-edit',
+		// 			'title' => __( 'Edit Post (Classic)', 'terminal' ),
+		// 			'href'  => $edit_post_link,
+		// 		)
+		// 	);
+		// }
 	}
 
 	/**
