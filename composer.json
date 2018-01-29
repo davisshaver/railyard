@@ -186,11 +186,11 @@
     "installer-paths": {
       "public/wp-content/mu-plugins/{$name}/": [
         "alleyinteractive/wordpress-fieldmanager",
-        "wordpress/gutenberg",
         "type:wordpress-muplugin"
       ],
       "public/wp-content/plugins/{$name}/": [
-        "type:wordpress-plugin"
+        "type:wordpress-plugin",
+        "wordpress/gutenberg"
       ],
       "public/wp-content/themes/{$name}/": ["type:wordpress-theme"],
       "public/wp/": ["type:wordpress-core"]

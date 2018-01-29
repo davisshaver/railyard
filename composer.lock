@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "361f77c26136c2525b77ca714dbbcf96",
+    "content-hash": "e78612891bc4d0b967781c05bdb9e80b",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "fca6ba18ad9671cf56b46be2c8295a2c30720714"
+                "reference": "93e9440be8c4db4abe2e89938115eae605c36d91"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/fca6ba18ad9671cf56b46be2c8295a2c30720714",
-                "reference": "fca6ba18ad9671cf56b46be2c8295a2c30720714",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/93e9440be8c4db4abe2e89938115eae605c36d91",
+                "reference": "93e9440be8c4db4abe2e89938115eae605c36d91",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-25T01:15:19+00:00"
+            "time": "2018-01-29T22:15:17+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
