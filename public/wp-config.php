@@ -140,15 +140,6 @@ if ( isset( $_SERVER['SERVER_SOFTWARE'] ) && strpos ($_SERVER['SERVER_SOFTWARE']
  */
 $table_prefix = getenv( 'DB_PREFIX' ) !== false ? getenv( 'DB_PREFIX' ) : 'wp_';
 
-$multisite = getenv( 'WP_ALLOW_MULTISITE' ) !== false ? getenv( 'WP_ALLOW_MULTISITE' ) : false;
-$multisite_installed = getenv( 'WP_MULTISITE_INSTALLED' ) !== false ? getenv( 'WP_MULTISITE_INSTALLED' ) : false;
-
-if ( $multisite) {
-	define( 'WP_ALLOW_MULTISITE', true );
-	if ( $multisite_installed ) {
-		// tk
-	}
-}
 /* That's all, stop editing! Happy blogging. */
 
 /** Absolute path to the WordPress directory. */
