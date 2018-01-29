@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "c5076bbdbc5afc5044427bd4e8444ac4",
+    "content-hash": "361f77c26136c2525b77ca714dbbcf96",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -342,12 +342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "2fbb7497468d005ac879d6a22d23cd657ba870c4"
+                "reference": "d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/2fbb7497468d005ac879d6a22d23cd657ba870c4",
-                "reference": "2fbb7497468d005ac879d6a22d23cd657ba870c4",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b",
+                "reference": "d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b",
                 "shasum": ""
             },
             "require-dev": {
@@ -371,7 +371,47 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-28T21:17:01+00:00"
+            "time": "2018-01-29T19:33:10+00:00"
+        },
+        {
+            "name": "dlh01/fieldmanager-beta-customize",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/dlh01/fieldmanager-beta-customize.git",
+                "reference": "7ee3f816c9a7da381f695a683e7d1a6c0d14d2d6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/dlh01/fieldmanager-beta-customize/zipball/7ee3f816c9a7da381f695a683e7d1a6c0d14d2d6",
+                "reference": "7ee3f816c9a7da381f695a683e7d1a6c0d14d2d6",
+                "shasum": ""
+            },
+            "require-dev": {
+                "squizlabs/php_codesniffer": "3.*",
+                "wp-coding-standards/wpcs": "dev-master"
+            },
+            "type": "wordpress-plugin",
+            "scripts": {
+                "post-install-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ],
+                "post-update-cmd": [
+                    "\"vendor/bin/phpcs\" --config-set installed_paths vendor/wp-coding-standards/wpcs"
+                ]
+            },
+            "authors": [
+                {
+                    "name": "David Herrera",
+                    "email": "david@alleyinteractive.com"
+                }
+            ],
+            "description": "Add Fieldmanager fields to the Customizer",
+            "support": {
+                "source": "https://github.com/dlh01/fieldmanager-beta-customize/tree/master",
+                "issues": "https://github.com/dlh01/fieldmanager-beta-customize/issues"
+            },
+            "time": "2018-01-27T21:04:49+00:00"
         },
         {
             "name": "florianbrinkmann/lazy-loading-responsive-images",
@@ -687,6 +727,44 @@
             "time": "2017-03-31T16:57:39+00:00"
         },
         {
+            "name": "publishpress",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/OSTraining/PublishPress.git",
+                "reference": "7ab09d90f64ad0515f7cea43ad897646a92349af"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/OSTraining/PublishPress/zipball/7ab09d90f64ad0515f7cea43ad897646a92349af",
+                "reference": "7ab09d90f64ad0515f7cea43ad897646a92349af",
+                "shasum": ""
+            },
+            "require-dev": {
+                "codeception/codeception": "^2.3",
+                "consolidation/robo": "~1",
+                "gettext/gettext": "^4.2",
+                "pressshack/wordpress-plugin-builder": "*"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "authors": [
+                {
+                    "name": "PublishPress",
+                    "email": "help@publishpress.com"
+                }
+            ],
+            "description": "WordPress plugin to accelerate your publishing workflow.",
+            "homepage": "http://publishpress.com/",
+            "support": {
+                "source": "https://github.com/OSTraining/PublishPress/tree/master",
+                "issues": "https://github.com/OSTraining/PublishPress/issues"
+            },
+            "time": "2018-01-26T13:10:33+00:00"
+        },
+        {
             "name": "querypath/querypath",
             "version": "dev-master",
             "source": {
@@ -922,6 +1000,27 @@
                 "shasum": null
             },
             "type": "wordpress-plugin"
+        },
+        {
+            "name": "wpackagist-plugin/classic-editor",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/classic-editor.zip?timestamp=1513206930",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/classic-editor/",
+            "time": "2017-12-13T23:15:30+00:00"
         },
         {
             "name": "wpackagist-plugin/customize-pane-resizer",
@@ -1530,17 +1629,20 @@
     "stability-flags": {
         "alleyinteractive/ad-layers": 20,
         "alleyinteractive/fm-widgets": 20,
-        "davisshaver/terminal": 20,
         "davisshaver/speed-bumps": 20,
+        "davisshaver/terminal": 20,
+        "dlh01/fieldmanager-beta-customize": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "wpackagist-plugin/customizer-browser-history": 20,
-        "wpackagist-plugin/customize-snapshots": 20,
+        "publishpress": 20,
+        "wpackagist-plugin/classic-editor": 20,
         "wpackagist-plugin/customize-pane-resizer": 20,
-        "wpackagist-plugin/temporary-login-without-password": 20,
+        "wpackagist-plugin/customize-snapshots": 20,
+        "wpackagist-plugin/customizer-browser-history": 20,
         "wpackagist-plugin/infinite-scroll-from-jetpack": 20,
         "wpackagist-plugin/simple-local-avatars": 20,
         "wpackagist-plugin/site-secrets": 20,
+        "wpackagist-plugin/temporary-login-without-password": 20,
         "wpackagist-plugin/unipress-api": 20,
         "wpackagist-plugin/wordpress-importer": 20,
         "roave/security-advisories": 20,
