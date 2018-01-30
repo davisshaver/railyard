@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "e78612891bc4d0b967781c05bdb9e80b",
+    "content-hash": "505fdb676005299530ffb51bdee84db2",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -342,12 +342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b"
+                "reference": "b7d1210b2d47a750c7413e8a28369e574e8723a9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b",
-                "reference": "d1d2a1509463c2ed9fd3ef3208336ae13edc9c8b",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/b7d1210b2d47a750c7413e8a28369e574e8723a9",
+                "reference": "b7d1210b2d47a750c7413e8a28369e574e8723a9",
                 "shasum": ""
             },
             "require-dev": {
@@ -371,7 +371,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-29T19:33:10+00:00"
+            "time": "2018-01-29T23:17:00+00:00"
         },
         {
             "name": "dlh01/fieldmanager-beta-customize",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "93e9440be8c4db4abe2e89938115eae605c36d91"
+                "reference": "0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/93e9440be8c4db4abe2e89938115eae605c36d91",
-                "reference": "93e9440be8c4db4abe2e89938115eae605c36d91",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4",
+                "reference": "0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-29T22:15:17+00:00"
+            "time": "2018-01-30T00:00:06+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -725,44 +725,6 @@
             "description": "Extend the composer/installers plugin to accept any arbitrary package type.",
             "homepage": "http://www.oomphinc.com/",
             "time": "2017-03-31T16:57:39+00:00"
-        },
-        {
-            "name": "publishpress",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/OSTraining/PublishPress.git",
-                "reference": "7ab09d90f64ad0515f7cea43ad897646a92349af"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/OSTraining/PublishPress/zipball/7ab09d90f64ad0515f7cea43ad897646a92349af",
-                "reference": "7ab09d90f64ad0515f7cea43ad897646a92349af",
-                "shasum": ""
-            },
-            "require-dev": {
-                "codeception/codeception": "^2.3",
-                "consolidation/robo": "~1",
-                "gettext/gettext": "^4.2",
-                "pressshack/wordpress-plugin-builder": "*"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "authors": [
-                {
-                    "name": "PublishPress",
-                    "email": "help@publishpress.com"
-                }
-            ],
-            "description": "WordPress plugin to accelerate your publishing workflow.",
-            "homepage": "http://publishpress.com/",
-            "support": {
-                "source": "https://github.com/OSTraining/PublishPress/tree/master",
-                "issues": "https://github.com/OSTraining/PublishPress/issues"
-            },
-            "time": "2018-01-26T13:10:33+00:00"
         },
         {
             "name": "querypath/querypath",
@@ -1634,7 +1596,6 @@
         "dlh01/fieldmanager-beta-customize": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "publishpress": 20,
         "wpackagist-plugin/classic-editor": 20,
         "wpackagist-plugin/customize-pane-resizer": 20,
         "wpackagist-plugin/customize-snapshots": 20,
