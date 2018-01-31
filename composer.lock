@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "505fdb676005299530ffb51bdee84db2",
+    "content-hash": "ca97a0e73d9157aacc9b1e1369e37b61",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -171,6 +171,37 @@
                 "issues": "https://bitbucket.org/archon810/smartdomdocument/issues"
             },
             "time": "2015-11-03T16:23:49+00:00"
+        },
+        {
+            "name": "automattic/liveblog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Automattic/liveblog.git",
+                "reference": "0fe23e6ab7626671989dc9047e6c5bb4c149fdc8"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Automattic/liveblog/zipball/0fe23e6ab7626671989dc9047e6c5bb4c149fdc8",
+                "reference": "0fe23e6ab7626671989dc9047e6c5bb4c149fdc8",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "predis/predis": "~1.0.3",
+                "rase/socket.io-emitter": "~0.7.0"
+            },
+            "type": "wordpress-plugin",
+            "license": [
+                "GPL-2.0+"
+            ],
+            "description": "Liveblogging done right. Using WordPress.",
+            "homepage": "https://github.com/Automattic/liveblog",
+            "support": {
+                "source": "https://github.com/Automattic/liveblog/tree/master",
+                "issues": "https://github.com/Automattic/liveblog/issues"
+            },
+            "time": "2018-01-27T13:02:33+00:00"
         },
         {
             "name": "composer/installers",
@@ -342,12 +373,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "b7d1210b2d47a750c7413e8a28369e574e8723a9"
+                "reference": "dec887c2732cf8ea2a63842c8a04299bae1f62a7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/b7d1210b2d47a750c7413e8a28369e574e8723a9",
-                "reference": "b7d1210b2d47a750c7413e8a28369e574e8723a9",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/dec887c2732cf8ea2a63842c8a04299bae1f62a7",
+                "reference": "dec887c2732cf8ea2a63842c8a04299bae1f62a7",
                 "shasum": ""
             },
             "require-dev": {
@@ -371,7 +402,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-29T23:17:00+00:00"
+            "time": "2018-01-31T11:45:28+00:00"
         },
         {
             "name": "dlh01/fieldmanager-beta-customize",
@@ -536,12 +567,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4"
+                "reference": "a01bf853009c5fca449eda81db5ee68978d0cbad"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4",
-                "reference": "0ad62d876e7f5f5b40ca6de9964640cefeaeeeb4",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/a01bf853009c5fca449eda81db5ee68978d0cbad",
+                "reference": "a01bf853009c5fca449eda81db5ee68978d0cbad",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +599,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-30T00:00:06+00:00"
+            "time": "2018-01-31T17:15:18+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -727,6 +758,95 @@
             "time": "2017-03-31T16:57:39+00:00"
         },
         {
+            "name": "predis/predis",
+            "version": "v1.0.x-dev",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/nrk/predis.git",
+                "reference": "9ead747663bb1b1ae017dfa0d152aca87792b42f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/nrk/predis/zipball/9ead747663bb1b1ae017dfa0d152aca87792b42f",
+                "reference": "9ead747663bb1b1ae017dfa0d152aca87792b42f",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.2"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "~4.8"
+            },
+            "suggest": {
+                "ext-curl": "Allows access to Webdis when paired with phpiredis",
+                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Predis\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Daniele Alessandri",
+                    "email": "suppakilla@gmail.com",
+                    "homepage": "http://clorophilla.net"
+                }
+            ],
+            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
+            "homepage": "http://github.com/nrk/predis",
+            "keywords": [
+                "nosql",
+                "predis",
+                "redis"
+            ],
+            "time": "2016-05-30T15:25:52+00:00"
+        },
+        {
+            "name": "ptrofimov/tinyredisclient",
+            "version": "1.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ptrofimov/tinyredisclient.git",
+                "reference": "7b8d487afa41b74e30d1a68400d89c12d9b82b6f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/ptrofimov/tinyredisclient/zipball/7b8d487afa41b74e30d1a68400d89c12d9b82b6f",
+                "reference": "7b8d487afa41b74e30d1a68400d89c12d9b82b6f",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "src/"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Petr Trofimov",
+                    "email": "petrofimov@yandex.ru",
+                    "homepage": "https://github.com/ptrofimov"
+                }
+            ],
+            "description": "The most lightweight Redis client written in PHP",
+            "homepage": "https://github.com/ptrofimov/tinyredisclient",
+            "keywords": [
+                "client",
+                "redis"
+            ],
+            "time": "2013-04-09T19:16:58+00:00"
+        },
+        {
             "name": "querypath/querypath",
             "version": "dev-master",
             "source": {
@@ -767,6 +887,45 @@
                 "xslt"
             ],
             "time": "2017-03-17T15:39:52+00:00"
+        },
+        {
+            "name": "rase/socket.io-emitter",
+            "version": "0.7.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/rase-/socket.io-php-emitter.git",
+                "reference": "82e1f27f04c02cc88fc4d986fc17a799390e7986"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/rase-/socket.io-php-emitter/zipball/82e1f27f04c02cc88fc4d986fc17a799390e7986",
+                "reference": "82e1f27f04c02cc88fc4d986fc17a799390e7986",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3",
+                "ptrofimov/tinyredisclient": "1.1.1"
+            },
+            "require-dev": {
+                "phpunit/phpunit": "3.7.*"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "SocketIO\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "description": "A PHP implementation of socket.io-emitter",
+            "homepage": "https://github.com/rase-/socket.io-php-emitter",
+            "keywords": [
+                "Socket.io",
+                "emit"
+            ],
+            "time": "2014-11-22T15:43:44+00:00"
         },
         {
             "name": "retlehs/kinsta-mu-plugins",
@@ -1222,12 +1381,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "eca509e364dcea7b7f41f9452d575684cc8e3fb4"
+                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/eca509e364dcea7b7f41f9452d575684cc8e3fb4",
-                "reference": "eca509e364dcea7b7f41f9452d575684cc8e3fb4",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0be5f7071b9007938a360d01da654b13d9caf12d",
+                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d",
                 "shasum": ""
             },
             "conflict": {
@@ -1311,7 +1470,7 @@
                 "symfony/web-profiler-bundle": ">=2,<2.3.19|>=2.4,<2.4.9|>=2.5,<2.5.4",
                 "symfony/yaml": ">=2,<2.0.22|>=2.1,<2.1.7",
                 "thelia/backoffice-default-template": ">=2.1,<2.1.2",
-                "thelia/thelia": ">=2.1.0-beta1,<2.1.3|>=2.1,<2.1.2",
+                "thelia/thelia": ">=2.1,<2.1.2|>=2.1.0-beta1,<2.1.3",
                 "twig/twig": "<1.20",
                 "typo3/cms": ">=6.2,<6.2.30|>=7,<7.6.22|>=8,<8.7.5",
                 "typo3/flow": ">=1,<1.0.4|>=1.1,<1.1.1|>=2,<2.0.1|>=2.3,<2.3.16|>=3,<3.0.10|>=3.1,<3.1.7|>=3.2,<3.2.7|>=3.3,<3.3.5",
@@ -1360,7 +1519,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-22T14:51:56+00:00"
+            "time": "2018-01-31T06:22:20+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1591,6 +1750,7 @@
     "stability-flags": {
         "alleyinteractive/ad-layers": 20,
         "alleyinteractive/fm-widgets": 20,
+        "automattic/liveblog": 20,
         "davisshaver/speed-bumps": 20,
         "davisshaver/terminal": 20,
         "dlh01/fieldmanager-beta-customize": 20,
