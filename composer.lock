@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ca97a0e73d9157aacc9b1e1369e37b61",
+    "content-hash": "fe53811b0820be51812001858eae8e97",
     "packages": [
         {
             "name": "alleyinteractive/ad-layers",
@@ -171,37 +171,6 @@
                 "issues": "https://bitbucket.org/archon810/smartdomdocument/issues"
             },
             "time": "2015-11-03T16:23:49+00:00"
-        },
-        {
-            "name": "automattic/liveblog",
-            "version": "dev-master",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Automattic/liveblog.git",
-                "reference": "0fe23e6ab7626671989dc9047e6c5bb4c149fdc8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Automattic/liveblog/zipball/0fe23e6ab7626671989dc9047e6c5bb4c149fdc8",
-                "reference": "0fe23e6ab7626671989dc9047e6c5bb4c149fdc8",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0",
-                "predis/predis": "~1.0.3",
-                "rase/socket.io-emitter": "~0.7.0"
-            },
-            "type": "wordpress-plugin",
-            "license": [
-                "GPL-2.0+"
-            ],
-            "description": "Liveblogging done right. Using WordPress.",
-            "homepage": "https://github.com/Automattic/liveblog",
-            "support": {
-                "source": "https://github.com/Automattic/liveblog/tree/master",
-                "issues": "https://github.com/Automattic/liveblog/issues"
-            },
-            "time": "2018-01-27T13:02:33+00:00"
         },
         {
             "name": "composer/installers",
@@ -373,12 +342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "dec887c2732cf8ea2a63842c8a04299bae1f62a7"
+                "reference": "38138bf2be960b330f616e9d16248c10727e9941"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/dec887c2732cf8ea2a63842c8a04299bae1f62a7",
-                "reference": "dec887c2732cf8ea2a63842c8a04299bae1f62a7",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/38138bf2be960b330f616e9d16248c10727e9941",
+                "reference": "38138bf2be960b330f616e9d16248c10727e9941",
                 "shasum": ""
             },
             "require-dev": {
@@ -402,7 +371,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-01-31T11:45:28+00:00"
+            "time": "2018-02-13T11:01:52+00:00"
         },
         {
             "name": "dlh01/fieldmanager-beta-customize",
@@ -567,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "a01bf853009c5fca449eda81db5ee68978d0cbad"
+                "reference": "85048918febb0e4787e706f7e8c7eaf35cbd7348"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/a01bf853009c5fca449eda81db5ee68978d0cbad",
-                "reference": "a01bf853009c5fca449eda81db5ee68978d0cbad",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/85048918febb0e4787e706f7e8c7eaf35cbd7348",
+                "reference": "85048918febb0e4787e706f7e8c7eaf35cbd7348",
                 "shasum": ""
             },
             "require": {
@@ -599,7 +568,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-01-31T17:15:18+00:00"
+            "time": "2018-02-13T17:00:17+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -758,95 +727,6 @@
             "time": "2017-03-31T16:57:39+00:00"
         },
         {
-            "name": "predis/predis",
-            "version": "v1.0.x-dev",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/nrk/predis.git",
-                "reference": "9ead747663bb1b1ae017dfa0d152aca87792b42f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/nrk/predis/zipball/9ead747663bb1b1ae017dfa0d152aca87792b42f",
-                "reference": "9ead747663bb1b1ae017dfa0d152aca87792b42f",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3.2"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "~4.8"
-            },
-            "suggest": {
-                "ext-curl": "Allows access to Webdis when paired with phpiredis",
-                "ext-phpiredis": "Allows faster serialization and deserialization of the Redis protocol"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "Predis\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Daniele Alessandri",
-                    "email": "suppakilla@gmail.com",
-                    "homepage": "http://clorophilla.net"
-                }
-            ],
-            "description": "Flexible and feature-complete Redis client for PHP and HHVM",
-            "homepage": "http://github.com/nrk/predis",
-            "keywords": [
-                "nosql",
-                "predis",
-                "redis"
-            ],
-            "time": "2016-05-30T15:25:52+00:00"
-        },
-        {
-            "name": "ptrofimov/tinyredisclient",
-            "version": "1.1.1",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/ptrofimov/tinyredisclient.git",
-                "reference": "7b8d487afa41b74e30d1a68400d89c12d9b82b6f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/ptrofimov/tinyredisclient/zipball/7b8d487afa41b74e30d1a68400d89c12d9b82b6f",
-                "reference": "7b8d487afa41b74e30d1a68400d89c12d9b82b6f",
-                "shasum": ""
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "src/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "authors": [
-                {
-                    "name": "Petr Trofimov",
-                    "email": "petrofimov@yandex.ru",
-                    "homepage": "https://github.com/ptrofimov"
-                }
-            ],
-            "description": "The most lightweight Redis client written in PHP",
-            "homepage": "https://github.com/ptrofimov/tinyredisclient",
-            "keywords": [
-                "client",
-                "redis"
-            ],
-            "time": "2013-04-09T19:16:58+00:00"
-        },
-        {
             "name": "querypath/querypath",
             "version": "dev-master",
             "source": {
@@ -887,45 +767,6 @@
                 "xslt"
             ],
             "time": "2017-03-17T15:39:52+00:00"
-        },
-        {
-            "name": "rase/socket.io-emitter",
-            "version": "0.7.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/rase-/socket.io-php-emitter.git",
-                "reference": "82e1f27f04c02cc88fc4d986fc17a799390e7986"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/rase-/socket.io-php-emitter/zipball/82e1f27f04c02cc88fc4d986fc17a799390e7986",
-                "reference": "82e1f27f04c02cc88fc4d986fc17a799390e7986",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.3",
-                "ptrofimov/tinyredisclient": "1.1.1"
-            },
-            "require-dev": {
-                "phpunit/phpunit": "3.7.*"
-            },
-            "type": "library",
-            "autoload": {
-                "psr-4": {
-                    "SocketIO\\": "src/"
-                }
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "MIT"
-            ],
-            "description": "A PHP implementation of socket.io-emitter",
-            "homepage": "https://github.com/rase-/socket.io-php-emitter",
-            "keywords": [
-                "Socket.io",
-                "emit"
-            ],
-            "time": "2014-11-22T15:43:44+00:00"
         },
         {
             "name": "retlehs/kinsta-mu-plugins",
@@ -1043,54 +884,6 @@
             "time": "2017-04-25T02:31:25+00:00"
         },
         {
-            "name": "wordpress/gutenberg",
-            "version": "v2.1.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/WordPress/gutenberg.git",
-                "reference": "cd2ce06256e9cb1f1e022ae0991b110eb5822d60"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/WordPress/gutenberg/zipball/cd2ce06256e9cb1f1e022ae0991b110eb5822d60",
-                "reference": "cd2ce06256e9cb1f1e022ae0991b110eb5822d60",
-                "shasum": ""
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "require-dev": {
-                "dealerdirect/phpcodesniffer-composer-installer": "^0.4.3",
-                "squizlabs/php_codesniffer": "^3.1",
-                "wimg/php-compatibility": "^8",
-                "wp-coding-standards/wpcs": "^0.14.0"
-            },
-            "type": "wordpress-plugin",
-            "scripts": {
-                "lint": [
-                    "phpcs"
-                ]
-            },
-            "license": [
-                "GPL-2.0-or-later"
-            ],
-            "description": "Prototyping since 1440. Development hub for the editor focus in core.",
-            "homepage": "https://wordpress.github.io/gutenberg/",
-            "keywords": [
-                "editor",
-                "gutenberg",
-                "javascript",
-                "react",
-                "wordpress",
-                "wp"
-            ],
-            "support": {
-                "issues": "https://github.com/WordPress/gutenberg/issues",
-                "source": "https://github.com/WordPress/gutenberg/tree/v2.1.0"
-            },
-            "time": "2018-01-25T18:00:45+00:00"
-        },
-        {
             "name": "wp-premium/gravityforms",
             "version": "2.2.5",
             "source": {
@@ -1123,16 +916,16 @@
             "type": "wordpress-plugin"
         },
         {
-            "name": "wpackagist-plugin/classic-editor",
+            "name": "wpackagist-plugin/akismet",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/classic-editor/",
+                "url": "https://plugins.svn.wordpress.org/akismet/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/classic-editor.zip?timestamp=1513206930",
+                "url": "https://downloads.wordpress.org/plugin/akismet.zip?timestamp=1513615735",
                 "reference": null,
                 "shasum": null
             },
@@ -1140,8 +933,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/classic-editor/",
-            "time": "2017-12-13T23:15:30+00:00"
+            "homepage": "https://wordpress.org/plugins/akismet/",
+            "time": "2017-12-18T16:48:55+00:00"
         },
         {
             "name": "wpackagist-plugin/customize-pane-resizer",
@@ -1207,16 +1000,16 @@
             "time": "2017-11-09T07:27:38+00:00"
         },
         {
-            "name": "wpackagist-plugin/infinite-scroll-from-jetpack",
+            "name": "wpackagist-plugin/jetpack",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/infinite-scroll-from-jetpack/",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/infinite-scroll-from-jetpack.zip?timestamp=1430819798",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.zip?timestamp=1517927441",
                 "reference": null,
                 "shasum": null
             },
@@ -1224,29 +1017,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/infinite-scroll-from-jetpack/",
-            "time": "2015-05-05T10:56:38+00:00"
-        },
-        {
-            "name": "wpackagist-plugin/simple-local-avatars",
-            "version": "dev-trunk",
-            "source": {
-                "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/simple-local-avatars/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/simple-local-avatars.zip?timestamp=1370222481",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/simple-local-avatars/",
-            "time": "2013-06-03T02:21:21+00:00"
+            "homepage": "https://wordpress.org/plugins/jetpack/",
+            "time": "2018-02-06T14:30:41+00:00"
         },
         {
             "name": "wpackagist-plugin/site-secrets",
@@ -1270,6 +1042,48 @@
             "time": "2016-12-29T18:56:45+00:00"
         },
         {
+            "name": "wpackagist-plugin/stream",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/stream/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/stream.zip?timestamp=1505275341",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/stream/",
+            "time": "2017-09-13T05:02:21+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/stream-to-slack",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/stream-to-slack/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/stream-to-slack.zip?timestamp=1446299570",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/stream-to-slack/",
+            "time": "2015-10-31T13:52:50+00:00"
+        },
+        {
             "name": "wpackagist-plugin/temporary-login-without-password",
             "version": "dev-trunk",
             "source": {
@@ -1291,16 +1105,16 @@
             "time": "2018-01-19T08:54:13+00:00"
         },
         {
-            "name": "wpackagist-plugin/unipress-api",
+            "name": "wpackagist-plugin/ultimate-category-excluder",
             "version": "dev-trunk",
             "source": {
                 "type": "svn",
-                "url": "https://plugins.svn.wordpress.org/unipress-api/",
+                "url": "https://plugins.svn.wordpress.org/ultimate-category-excluder/",
                 "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/unipress-api.zip?timestamp=1515002025",
+                "url": "https://downloads.wordpress.org/plugin/ultimate-category-excluder.zip?timestamp=1515353434",
                 "reference": null,
                 "shasum": null
             },
@@ -1308,8 +1122,8 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/unipress-api/",
-            "time": "2018-01-03T17:53:45+00:00"
+            "homepage": "https://wordpress.org/plugins/ultimate-category-excluder/",
+            "time": "2018-01-07T19:30:34+00:00"
         },
         {
             "name": "wpackagist-plugin/wordpress-importer",
@@ -1331,6 +1145,48 @@
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-importer/",
             "time": "2017-12-15T04:22:57+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-parsely",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-parsely/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-parsely.zip?timestamp=1517346451",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-parsely/",
+            "time": "2018-01-30T21:07:31+00:00"
+        },
+        {
+            "name": "wpackagist-plugin/wp-widget-disable",
+            "version": "dev-trunk",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/wp-widget-disable/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-widget-disable.zip?timestamp=1513079126",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-widget-disable/",
+            "time": "2017-12-12T11:45:26+00:00"
         }
     ],
     "packages-dev": [
@@ -1381,12 +1237,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Roave/SecurityAdvisories.git",
-                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d"
+                "reference": "5ebdd35b291cf9be4a425022872cb3aaf03192df"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/0be5f7071b9007938a360d01da654b13d9caf12d",
-                "reference": "0be5f7071b9007938a360d01da654b13d9caf12d",
+                "url": "https://api.github.com/repos/Roave/SecurityAdvisories/zipball/5ebdd35b291cf9be4a425022872cb3aaf03192df",
+                "reference": "5ebdd35b291cf9be4a425022872cb3aaf03192df",
                 "shasum": ""
             },
             "conflict": {
@@ -1436,6 +1292,7 @@
                 "onelogin/php-saml": "<2.10.4",
                 "oro/crm": ">=1.7,<1.7.4",
                 "oro/platform": ">=1.7,<1.7.4",
+                "padraic/file_get_contents": "<1.1.2",
                 "phpmailer/phpmailer": ">=5,<5.2.24",
                 "phpunit/phpunit": ">=4.8.19,<4.8.28|>=5.0.10,<5.6.3",
                 "phpxmlrpc/extras": "<0.6.1",
@@ -1446,8 +1303,8 @@
                 "silverstripe/forum": "<=0.6.1|>=0.7,<=0.7.3",
                 "silverstripe/framework": ">=3,<3.3",
                 "silverstripe/userforms": "<3",
-                "simplesamlphp/saml2": "<1.8.1|>=1.9,<1.9.1|>=1.10,<1.10.3|>=2,<2.3.3",
-                "simplesamlphp/simplesamlphp": "<1.14.16",
+                "simplesamlphp/saml2": "<1.10.4|>=2,<2.3.5|>=3,<3.1.1",
+                "simplesamlphp/simplesamlphp": "<1.15.2",
                 "simplesamlphp/simplesamlphp-module-infocard": "<1.0.1",
                 "socalnick/scn-social-auth": "<1.15.2",
                 "squizlabs/php_codesniffer": ">=1,<2.8.1",
@@ -1519,7 +1376,7 @@
                 }
             ],
             "description": "Prevents installation of composer packages with known security vulnerabilities: no API, simply require it",
-            "time": "2018-01-31T06:22:20+00:00"
+            "time": "2018-02-13T10:17:11+00:00"
         },
         {
             "name": "squizlabs/php_codesniffer",
@@ -1527,12 +1384,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "68fb8e5c76da4a220275ecce7179f25c9ecc2b13"
+                "reference": "8a457eb0e3dcd366b85fd0ee1e6509cf17e47814"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/68fb8e5c76da4a220275ecce7179f25c9ecc2b13",
-                "reference": "68fb8e5c76da4a220275ecce7179f25c9ecc2b13",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/8a457eb0e3dcd366b85fd0ee1e6509cf17e47814",
+                "reference": "8a457eb0e3dcd366b85fd0ee1e6509cf17e47814",
                 "shasum": ""
             },
             "require": {
@@ -1597,7 +1454,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2017-07-13T01:37:12+00:00"
+            "time": "2018-02-11T23:06:14+00:00"
         },
         {
             "name": "wp-coding-standards/wpcs",
@@ -1750,22 +1607,24 @@
     "stability-flags": {
         "alleyinteractive/ad-layers": 20,
         "alleyinteractive/fm-widgets": 20,
-        "automattic/liveblog": 20,
         "davisshaver/speed-bumps": 20,
         "davisshaver/terminal": 20,
         "dlh01/fieldmanager-beta-customize": 20,
         "humanmade/s3-uploads": 10,
         "johnpbloch/wordpress": 20,
-        "wpackagist-plugin/classic-editor": 20,
+        "wpackagist-plugin/akismet": 20,
         "wpackagist-plugin/customize-pane-resizer": 20,
         "wpackagist-plugin/customize-snapshots": 20,
         "wpackagist-plugin/customizer-browser-history": 20,
-        "wpackagist-plugin/infinite-scroll-from-jetpack": 20,
-        "wpackagist-plugin/simple-local-avatars": 20,
+        "wpackagist-plugin/jetpack": 20,
         "wpackagist-plugin/site-secrets": 20,
         "wpackagist-plugin/temporary-login-without-password": 20,
-        "wpackagist-plugin/unipress-api": 20,
+        "wpackagist-plugin/ultimate-category-excluder": 20,
         "wpackagist-plugin/wordpress-importer": 20,
+        "wpackagist-plugin/wp-parsely": 20,
+        "wpackagist-plugin/wp-widget-disable": 20,
+        "wpackagist-plugin/stream": 20,
+        "wpackagist-plugin/stream-to-slack": 20,
         "roave/security-advisories": 20,
         "wp-coding-standards/wpcs": 20,
         "wpackagist-plugin/debug-bar-console": 20,
