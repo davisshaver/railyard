@@ -2,8 +2,7 @@
   "name": "railyard",
   "version": "1.0.0",
   "scripts": {
-    "build": "npm install && npm run build-gutenberg && npm run build-theme",
-    "build-gutenberg": "cd public/wp-content/plugins/gutenberg/ && npm install && npm run build",
+    "build": "npm install && npm run build-theme",
     "build-theme": "cd public/wp-content/themes/terminal/ && npm install && npm run build"
   },
   "license": "MIT",
