@@ -342,12 +342,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/davisshaver/terminal.git",
-                "reference": "38138bf2be960b330f616e9d16248c10727e9941"
+                "reference": "ef59b57896898823505324d777a281724a97a990"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/38138bf2be960b330f616e9d16248c10727e9941",
-                "reference": "38138bf2be960b330f616e9d16248c10727e9941",
+                "url": "https://api.github.com/repos/davisshaver/terminal/zipball/ef59b57896898823505324d777a281724a97a990",
+                "reference": "ef59b57896898823505324d777a281724a97a990",
                 "shasum": ""
             },
             "require-dev": {
@@ -371,7 +371,7 @@
                 "source": "https://github.com/davisshaver/terminal/tree/master",
                 "issues": "https://github.com/davisshaver/terminal/issues"
             },
-            "time": "2018-02-13T11:01:52+00:00"
+            "time": "2018-02-14T14:47:03+00:00"
         },
         {
             "name": "dlh01/fieldmanager-beta-customize",
@@ -536,12 +536,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core.git",
-                "reference": "85048918febb0e4787e706f7e8c7eaf35cbd7348"
+                "reference": "9a1b9b226d7402d6f261271caaa364963f0f08f9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/85048918febb0e4787e706f7e8c7eaf35cbd7348",
-                "reference": "85048918febb0e4787e706f7e8c7eaf35cbd7348",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core/zipball/9a1b9b226d7402d6f261271caaa364963f0f08f9",
+                "reference": "9a1b9b226d7402d6f261271caaa364963f0f08f9",
                 "shasum": ""
             },
             "require": {
@@ -568,7 +568,7 @@
                 "cms",
                 "wordpress"
             ],
-            "time": "2018-02-13T17:00:17+00:00"
+            "time": "2018-02-14T12:00:08+00:00"
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
@@ -1462,12 +1462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards.git",
-                "reference": "8cadf48fa1c70b2381988e0a79e029e011a8f41c"
+                "reference": "f0aa3298957d7cb73dc20e59e6f7ecf04aebf5a1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/8cadf48fa1c70b2381988e0a79e029e011a8f41c",
-                "reference": "8cadf48fa1c70b2381988e0a79e029e011a8f41c",
+                "url": "https://api.github.com/repos/WordPress-Coding-Standards/WordPress-Coding-Standards/zipball/f0aa3298957d7cb73dc20e59e6f7ecf04aebf5a1",
+                "reference": "f0aa3298957d7cb73dc20e59e6f7ecf04aebf5a1",
                 "shasum": ""
             },
             "require": {
@@ -1494,7 +1494,7 @@
                 "standards",
                 "wordpress"
             ],
-            "time": "2017-11-01T15:10:46+00:00"
+            "time": "2018-02-14T01:18:13+00:00"
         },
         {
             "name": "wpackagist-plugin/debug-bar",
